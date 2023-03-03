@@ -11,7 +11,24 @@ Here is the overview of the recommendation system architecture:
 
 
 
+## Cloud Architecture
+![Cloud Architecture](https://eraser.imgix.net/workspaces/gmSH9Ha57034q6Dbl8W6/reS6fUv66LcKWYn8yV2OvCPvwSm2/---figure---SK-gJrFTl9SkGOeCwD9-pA.svg?ixlib=js-3.7.0 "Cloud Architecture")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 <!--- Eraser file: https://app.eraser.io/workspace/gmSH9Ha57034q6Dbl8W6 --->
