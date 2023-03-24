@@ -14,7 +14,7 @@ Here is an overview of the recommendation system architecture:
 [﻿Data Model](https://app.eraser.io/workspace/1s1ejO9V9pJ5S8wEbFQq?elements=8JzyCK2FluxHKs43uPerDg) 
 
 ## To Do
-- [] Add deployment instructions  @ 
+- [ ] Add deployment instructions  @ 
 ## Reference RFCs
 These files are in the `docs/rfc` folder:
 
