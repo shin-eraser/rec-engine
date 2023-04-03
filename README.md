@@ -7,7 +7,7 @@ It uses a ML-based recommendation system to that generates recommendations. It u
 ## Architecture
 Here is an overview of the recommendation system architecture:
 
-![Architecture](https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fworkspaces%2F1s1ejO9V9pJ5S8wEbFQq%2FreS6fUv66LcKWYn8yV2OvCPvwSm2%2F---figure---aXPGR-BfSjgrHhIbL3QX----figure---iRsDjD3F9GM815UdBCoKXA.svg?alt=media&token=d618f63c-2dab-4efc-a3f6-bd069e97c1e8 "Architecture")
+![Architecture](https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fworkspaces%2F1s1ejO9V9pJ5S8wEbFQq%2FreS6fUv66LcKWYn8yV2OvCPvwSm2%2F---figure---n0FqiynYxRZCskL11yepk---figure---iRsDjD3F9GM815UdBCoKXA.svg?alt=media&token=4973cf6a-5c89-42fd-82c1-f93538e56854 "Architecture")
 
 [﻿Cloud Architecture](https://app.eraser.io/workspace/1s1ejO9V9pJ5S8wEbFQq?elements=AIk1vY3nsw7UwO2-C7sIgA) 
 
@@ -23,12 +23,6 @@ These files are in the `docs/rfc` folder:
 [﻿RFC-134: 🚴‍♀️ Redundant rendering](https://app.eraser.io/workspace/EHPzWziuWnzDP1Kk8tXv) 
 
  
-
-
-
-
-
-
 
 
 
