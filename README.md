@@ -7,11 +7,7 @@ It uses a ML-based recommendation system to that generates recommendations. It u
 ## Architecture
 Here is an overview of the recommendation system architecture:
 
-![Architecture](https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fworkspaces%2F1s1ejO9V9pJ5S8wEbFQq%2FreS6fUv66LcKWYn8yV2OvCPvwSm2%2F---figure---n0FqiynYxRZCskL11yepk---figure---iRsDjD3F9GM815UdBCoKXA.svg?alt=media&token=4973cf6a-5c89-42fd-82c1-f93538e56854 "Architecture")
-
-[﻿Cloud Architecture](https://app.eraser.io/workspace/1s1ejO9V9pJ5S8wEbFQq?elements=AIk1vY3nsw7UwO2-C7sIgA) 
-
-[﻿Data Model](https://app.eraser.io/workspace/1s1ejO9V9pJ5S8wEbFQq?elements=8JzyCK2FluxHKs43uPerDg) 
+![Architecture](https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fworkspaces%2F1s1ejO9V9pJ5S8wEbFQq%2FreS6fUv66LcKWYn8yV2OvCPvwSm2%2F---figure---gZmHN9rX1dGeM2CTlPEX2---figure---iRsDjD3F9GM815UdBCoKXA.svg?alt=media&token=34155c62-4b8c-4aa1-bf58-068cf44bfd95 "Architecture")
 
 ## To Do
 - [ ] Add deployment instructions  @ 
