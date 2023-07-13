@@ -1,4 +1,4 @@
-<a target="_blank" href="https://eraser-qa.web.app/workspace/Rzy3eCsk7Ylpj42PmnfO" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a>
+<a target="_blank" href="https://eraser-qa.web.app/workspace/yvDanxaEVypEKvwMmBR1" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a>
 ## DEMO to the SOLID TEAM
 # Hacker News Recommendations
 This service generates daily recommendations from the day's trending articles on [﻿Hacker News](https://news.ycombinator.com/) based on preferences specified by a user.
@@ -8,16 +8,8 @@ It uses a ML-based recommendation system to that generates recommendations. It u
 ## Architecture
 Here is an overview of the recommendation system architecture:
 
+HEre are some changes
 
 
-asdf
-
-asdf
-
-
-
-feafeawfafaew
-
-
-<!--- Eraser file: https://eraser-qa.web.app/workspace/Rzy3eCsk7Ylpj42PmnfO --->
+<!--- Eraser file: https://eraser-qa.web.app/workspace/yvDanxaEVypEKvwMmBR1 --->
 <!--- This file was last edited by [name] via Eraser on [date] --->
