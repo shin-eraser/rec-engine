@@ -6,13 +6,7 @@ This service generates daily recommendations from the day's trending articles on
 It uses a ML-based recommendation system to that generates recommendations. It utilizes an online, nearline and offline layer. WHAT
 
 ## Architecture
-Here is an overview of the recommendation system architecture:
-
-HEre are some changes
-
-Some more changes
-
-aaa
+New changes 7/13
 
 
 <!--- Eraser file: https://eraser-qa.web.app/workspace/yvDanxaEVypEKvwMmBR1 --->
