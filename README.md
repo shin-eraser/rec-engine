@@ -1,4 +1,5 @@
-<a target="_blank" href="https://eraser-qa.web.app/workspace/CvcgBdBUNkB9RCdWGide" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a>
+<p><a target="_blank" href="https://eraser-qa.web.app/workspace/uJZXEqwqwvuil61uLjWb" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+
 ## DEMO to the SOLID TEAM
 # Hacker News Recommendations
 This service generates daily recommendations from the day's trending articles on [﻿Hacker News](https://news.ycombinator.com/) based on preferences specified by a user.
@@ -16,12 +17,10 @@ aaa
 
 Create a pR!
 
-Create a commit
-
-NOw let's create a PR
-
-Let's push to existing branch
+![Figure 1](/.eraser/uJZXEqwqwvuil61uLjWb___L3unTxC1uVeMgT3fOeUPhpWlQR23___---figure---3_L2LNU0XEM64lrfpC6Dz---figure---CGmXcTv1W1ehk7zD1k5wrA.png "Figure 1")
 
 
-<!--- Eraser file: https://eraser-qa.web.app/workspace/CvcgBdBUNkB9RCdWGide --->
+
+
+<!--- Eraser file: https://eraser-qa.web.app/workspace/uJZXEqwqwvuil61uLjWb --->
 <!--- This file was last edited by [name] via Eraser on [date] --->
