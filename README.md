@@ -17,8 +17,6 @@ aaa
 
 Create a pR!
 
-![Figure 1](/.eraser/uJZXEqwqwvuil61uLjWb___L3unTxC1uVeMgT3fOeUPhpWlQR23___---figure---3_L2LNU0XEM64lrfpC6Dz---figure---CGmXcTv1W1ehk7zD1k5wrA.png "Figure 1")
-
 
 
 
