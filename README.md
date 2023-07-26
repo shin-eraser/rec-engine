@@ -6,9 +6,9 @@ This service generates daily recommendations from the day's trending articles on
 It uses a ML-based recommendation system to that generates recommendations. It utilizes an online, nearline and offline layer. WHAT
 
 ## Architecture
-Here is an overview of the recommendation system architecture:
+Here is an overview of the recommendation system architecture: asdf
 
-![Figure 1](/.eraser/SbaaGZqQ7jpkPN7ydwtU___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---dUcP5qqu6sY0pxm8sNcVq---figure---Ou8o-swMuIDobJLjftej1g.png "Figure 1")
+![Figure 1](/.eraser/SbaaGZqQ7jpkPN7ydwtU___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---1sFwRarbWfcWCNo82yVSN---figure---Ou8o-swMuIDobJLjftej1g.png "Figure 1")
 
 
 
