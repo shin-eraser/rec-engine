@@ -2,5 +2,9 @@
 
 asdfasdf
 
+![Figure 1](/.eraser/HoDgQB9sIv1Fy140qFem___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---TeNp1Ot8PKwF0jL2aCpQ2---figure---lw0VM54b9ZIX09CKrJOVuA.png "Figure 1")
+
+
+
 
 <!--- Eraser file: https://app.eraser.io/workspace/HoDgQB9sIv1Fy140qFem --->
