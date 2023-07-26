@@ -8,7 +8,7 @@ It uses a ML-based recommendation system to that generates recommendations. It u
 ## Architecture
 Here is an overview of the recommendation system architecture:
 
-![Figure 1](/.eraser/SbaaGZqQ7jpkPN7ydwtU___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---mgFt8WsBPE8pWRZAm4IpE---figure---Ou8o-swMuIDobJLjftej1g.png "Figure 1")
+![Figure 1](/.eraser/SbaaGZqQ7jpkPN7ydwtU___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Jl3sB7dniu3hzQzrhyHPf---figure---Ou8o-swMuIDobJLjftej1g.png "Figure 1")
 
 
 
