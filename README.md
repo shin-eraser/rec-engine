@@ -10,7 +10,7 @@ Here is an overview of the recommendation system architecture: asdf
 
 hihi
 
-![Figure 1](/.eraser/SbaaGZqQ7jpkPN7ydwtU___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure----qpuZIjWmrVHdhKbfBcFP---figure---yFYAo-hSjZ65DqIcOZ3g_Q.png "Figure 1")
+![Figure 1](/.eraser/SbaaGZqQ7jpkPN7ydwtU___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---lznPG-97Gi6B_KB9YCTq3---figure---yFYAo-hSjZ65DqIcOZ3g_Q.png "Figure 1")
 
 
 
