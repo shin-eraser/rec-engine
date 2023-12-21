@@ -13,7 +13,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Dual Write](undefined "Dual Write")
+![Dual Write](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---CJjlxAuCnU3M0CXcgkKQL---figure---p1bj_35bm_O82u_8Dr9dEA.png "Dual Write")
 
 ### Prerequisites
 For dual write to work, writes to the ProductsDB should be centralized within a single service, whether it is a true microservice or a module within a monolith. If you are writing a lot of raw DB queries or accessing low level ORMs across your codebase, it will be a nightmare to ensure that all writes are coupled.
