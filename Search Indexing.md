@@ -13,7 +13,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Dual Write](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---CJjlxAuCnU3M0CXcgkKQL---figure---p1bj_35bm_O82u_8Dr9dEA.png "Dual Write")
+![Dual Write](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---IY-3uTlVnY4Y2T3NmQhW6---figure---p1bj_35bm_O82u_8Dr9dEA.png "Dual Write")
 
 ### Prerequisites
 For dual write to work, writes to the ProductsDB should be centralized within a single service, whether it is a true microservice or a module within a monolith. If you are writing a lot of raw DB queries or accessing low level ORMs across your codebase, it will be a nightmare to ensure that all writes are coupled.
@@ -48,7 +48,7 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 ### What it is
 A separate process that queries for all recently changed records and updates them:
 
-![Batch job](undefined "Batch job")
+![Batch job](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---hPNOYIZxmvtoN6eJfKsW1---figure---eQajKjoS6u53iC2X9lLEBQ.png "Batch job")
 
 ### Prerequisites
 In order for this to work, we'll just need to make sure our database records have an `updatedAt`  field that is consistently changed. 
@@ -77,7 +77,7 @@ Lastly, if one of our Makers chooses to delete their Marker from our product and
 ### What it is
 We subscribe to changes at the database level and either process them directly or put them onto a message queue such as RabbitMQ or Kafka. (To learn more, watch this [﻿excellent talk](https://www.youtube.com/watch?v=fU9hR3kiOK0))
 
-![Database Change Streaming](undefined "Database Change Streaming")
+![Database Change Streaming](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---UKoCa49XWtTECp2TuXjHo---figure---2JaJNYn7-K6c7wnJhlvssg.png "Database Change Streaming")
 
 ### Prerequisites
 The major limitation is that we need a database that supports this. Luckily, most popular DBs include a mechanism for this. For example:
