@@ -13,7 +13,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Dual Write](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Xc-4ANHqY3zQTUg2P_gfA---figure---p1bj_35bm_O82u_8Dr9dEA.png "Dual Write")
+![Dual Write](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---2DvLzPcYZxzUD5x5xnl39---figure---p1bj_35bm_O82u_8Dr9dEA.png "Dual Write")
 
 
 
@@ -49,7 +49,7 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 ### What it is
 A separate process that queries for all recently changed records and updates them:
 
-![Batch job](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---iuq9uDi2K3-EezpasN6Ub---figure---eQajKjoS6u53iC2X9lLEBQ.png "Batch job")
+![Batch job](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---S22H3MRMmvNyT30J3pWR0---figure---eQajKjoS6u53iC2X9lLEBQ.png "Batch job")
 
 
 
@@ -80,7 +80,7 @@ Lastly, if one of our Makers chooses to delete their Marker from our product and
 ### What it is
 We subscribe to changes at the database level and either process them directly or put them onto a message queue such as RabbitMQ or Kafka. (To learn more, watch this [﻿excellent talk](https://www.youtube.com/watch?v=fU9hR3kiOK0))
 
-![Database Change Streaming](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---HfOa8Tl4anI8z_Pjzs7e7---figure---2JaJNYn7-K6c7wnJhlvssg.png "Database Change Streaming")
+![Database Change Streaming](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---T6b5Fs3dZN5kraQ9XJe2P---figure---2JaJNYn7-K6c7wnJhlvssg.png "Database Change Streaming")
 
 
 
