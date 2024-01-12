@@ -12,7 +12,7 @@ More things!
 
 
 
-[﻿github.com/Keith3895/car-wash/blob/main/README.md#assets](https://github.com/Keith3895/car-wash/blob/main/README.md#assets) 
+[﻿assets](https://github.com/Keith3895/car-wash/blob/main/README.md#assets) 
 
 
 <!--- Eraser file: https://app.eraser.io/workspace/wH68eC8NIc1O4ueubFSJ --->
