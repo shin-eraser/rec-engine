@@ -10,6 +10,8 @@
 This is a car wash application that allows users to book car wash services from the comfort of their homes. The application will be available on both Android and iOS. The application will be written in Flutter and Django.
 
 ### Assets
+- UI Screens: [﻿link to Figma](https://www.figma.com/file/QbtwZGMvLuDpGXR2IcB7A3/Car-wash?type=design&node-id=0%3A1&mode=design&t=n68WTHlcaHpY86EO-1)  
+- Business model canvas: [﻿Link to BMC](https://app.mural.co/t/keithfranklin6506/m/keithfranklin6506/1699966821684/e68a321ade3318162db526e676f4d3042aea0be4?sender=ud754661bd71ca9e639dd5444) 
 ### DevOps Design
 #### Code Repository Design
 The Application is split into two broad repositories:
