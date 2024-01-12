@@ -12,12 +12,13 @@ This is a car wash application that allows users to book car wash services from 
 ### Assets
 ### DevOps Design
 #### Code Repository Design
-The Application is split into two broad repositories
+The Application is split into two broad repositories:
 
-
+1. Car Wash backend [﻿github.com/Keith3895/car-wash-backend-core](https://github.com/Keith3895/car-wash-backend-core) 
+This is a Python app written with Django.
+2. Car wash App [﻿github.com/Keith3895/car-wash-app](https://github.com/Keith3895/car-wash-app) 
 This is a Flutter app created for both Android and iOS.
 [﻿repo Design](https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4?elements=34cwCizl3yFU2Wua60RqHA)  
-
 ### Application Design
 #### DB Design
 [﻿DB Design](https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4?elements=xA0tEslogVhQjNqXsEwxyQ)  
