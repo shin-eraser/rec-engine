@@ -1,4 +1,4 @@
-<p><a target="_blank" href="https://app.eraser.io/workspace/PfP1y1B33fOKSABFCAzq" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+<p><a target="_blank" href="https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
 Imagine you work at **Makers and Markers**, an online marketplace for artisanal whiteboards and whiteboard-related products. The marketplace has really taken off, and users are asking for a richer search experience to help them find what they're looking for. You definitely need the raw product information to be searchable, and also may want to add other data, like product reviews and ratings.
 
@@ -13,8 +13,6 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Dual Write](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---2DvLzPcYZxzUD5x5xnl39---figure---p1bj_35bm_O82u_8Dr9dEA.png "Dual Write")
-
 
 
 ### Prerequisites
@@ -27,7 +25,7 @@ The primary advantage here is **simplicity**. Because it requires no additional 
 - Avoid trapdoor decisions that would be harder to undo
 - Use existing logging and monitoring tools to support your roll out
 - Use existing tests and test infrastructure
-**Real-time** updates also come for free with this approach. As soon as a product description changes, our users can search for it (*_subject to _[﻿eventual consistency](https://www.scylladb.com/glossary/eventual-consistency/) ).
+**Real-time** updates also come for free with this approach. As soon as a product description changes, our users can search for it (*_subject to _[﻿eventual consistency](https://www.scylladb.com/glossary/eventual-consistency/)  ).
 ### The Bad and the Ugly
 One downside of having no additional architecture is that we have tough choices with **error handling. **What do we do if the write to the SearchDB fails? What if we're inside a transaction? Handling those can be complex and testing them is non-trivial. Any **durability** comes with **increased user-facing latency. **If we retry on failures and the SearchDB is slow or overwhelmed, the product experience suffers whenever a vendor tries to update a product or a user tries to leave a review because the primary service needs to wait.
 
@@ -48,8 +46,6 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 # Batch Jobs
 ### What it is
 A separate process that queries for all recently changed records and updates them:
-
-![Batch job](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---S22H3MRMmvNyT30J3pWR0---figure---eQajKjoS6u53iC2X9lLEBQ.png "Batch job")
 
 
 
@@ -80,16 +76,14 @@ Lastly, if one of our Makers chooses to delete their Marker from our product and
 ### What it is
 We subscribe to changes at the database level and either process them directly or put them onto a message queue such as RabbitMQ or Kafka. (To learn more, watch this [﻿excellent talk](https://www.youtube.com/watch?v=fU9hR3kiOK0))
 
-![Database Change Streaming](/.eraser/PfP1y1B33fOKSABFCAzq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---T6b5Fs3dZN5kraQ9XJe2P---figure---2JaJNYn7-K6c7wnJhlvssg.png "Database Change Streaming")
-
 
 
 ### Prerequisites
 The major limitation is that we need a database that supports this. Luckily, most popular DBs include a mechanism for this. For example:
 
-- Postgres, (which we should [﻿probably be using](https://www.amazingcto.com/postgres-for-everything/) ) via [﻿l﻿ogical replication](https://www.postgresql.org/docs/current/logical-replication.html)  
+- Postgres, (which we should [﻿probably be using](https://www.amazingcto.com/postgres-for-everything/)  ) via [﻿l﻿ogical replication](https://www.postgresql.org/docs/current/logical-replication.html)  
 - MySQL via the [﻿bin log](https://dev.mysql.com/doc/refman/8.0/en/binary-log.html)  
-- MongoDB via [﻿change streams ](https://www.mongodb.com/docs/current/changeStreams/)   There are also many databases and services that provide real-time reactivity out of the box. If you're already using a tool like that, you should probably use that here! 
+- MongoDB via [﻿change streams ](https://www.mongodb.com/docs/current/changeStreams/)  There are also many databases and services that provide real-time reactivity out of the box. If you're already using a tool like that, you should probably use that here!
 ### The Good
 This is the best approach for **performance** and **scale **(fun fact: CDC is how databases implement replication, so you know it's built for speed!).
 
@@ -124,11 +118,9 @@ For more mature products or to support more complex features, batch jobs that pe
 And once Makers and Markers moves into the mainstream, it may be time to look into tapping directly into our database's change log. This approach is best if:
 - We want to support a number of other complex querying and reporting use cases with a single architectural approach
 - We need to support high-throughput scale while still maintaining low latency
-
-
 Adding a row as test
 
+Test
 
 
-
-<!--- Eraser file: https://app.eraser.io/workspace/PfP1y1B33fOKSABFCAzq --->
+<!--- Eraser file: https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC --->
