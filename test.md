@@ -6,8 +6,16 @@
 ![License](https://img.shields.io/static/v1?label=license&message=CC-BY-NC-ND-4.0&color=green "")
 
 ## Table of Contents
-[﻿Roadmap](https://github.com/Keith3895/car-wash/blob/main/README.md) 
-
+1. [﻿Introduction](#introduction) 
+2. [﻿Assets](#assets) 
+3. [﻿DevOps Design](#devops-design) 
+    1. [﻿Code Repository Design](#code-repository-design) 
+4. [﻿Application Design](#application-design) 
+    1. [﻿DB Design](#db-design) 
+    2. [﻿Application Architecture](#application-architecture) 
+        1. [﻿FrontEnd](#frontend) 
+        2. [﻿Backend](#backend) 
+5. [﻿RoadMap](#roadmap) 
 ### Introduction
 This is a car wash application that allows users to book car wash services from the comfort of their homes. The application will be available on both Android and iOS. The application will be written in Flutter and Django.
 
@@ -101,15 +109,11 @@ car_wash
 
 ### Process Flows
 1. User Onboarding
-
+[﻿User Onboarding flow](https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4?elements=6OiPOHN-0O7lpb7hDrniPg)    
 2. Vendor KYC
-
+[﻿Vendor Verification Flow](https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4?elements=ZuO3WRez81VvfTrLQx8IuQ) 
 
 ### 
-
-
-
-
 
 
 
