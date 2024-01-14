@@ -3,17 +3,19 @@
 # Car Wash
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white "")
 
+![Run in Postman](https://run.pstmn.io/button.svg "")
+
 ![License](https://img.shields.io/static/v1?label=license&message=CC-BY-NC-ND-4.0&color=green "")
 
 ## Table of Contents
-1. [﻿Introduction](#introduction) 
-2. [﻿Assets](#assets) 
-3. [﻿DevOps Design](#devops-design) 
+1. [﻿Introduction](#introduction)  
+2. [﻿Assets](#assets)  
+3. [﻿DevOps Design](#devops-design)  
     1. [﻿Code Repository Design](#code-repository-design) 
-4. [﻿Application Design](#application-design) 
-    1. [﻿DB Design](#db-design) 
-    2. [﻿Application Architecture](#application-architecture) 
-        1. [﻿FrontEnd](#frontend) 
+4. [﻿Application Design](#application-design)  
+    1. [﻿DB Design](#db-design)  
+    2. [﻿Application Architecture](#application-architecture)  
+        1. [﻿FrontEnd](#frontend)  
         2. [﻿Backend](#backend) 
 5. [﻿RoadMap](#roadmap) 
 ### Introduction
@@ -30,12 +32,13 @@ The Application is split into two broad repositories:
 This is a Python app written with Django.
 2. Car wash App [﻿github.com/Keith3895/car-wash-app](https://github.com/Keith3895/car-wash-app) 
 This is a Flutter app created for both Android and iOS.
-[﻿repo Design](https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4?elements=34cwCizl3yFU2Wua60RqHA)  
+![repo Design](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---9mFU8BHBViaZrvgOj1cWw---figure---Ea6JM1DUewB3N9lfHsKzgQ.png "repo Design")
+
 ### Application Design
 #### DB Design
-[﻿DB Design](https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4?elements=xA0tEslogVhQjNqXsEwxyQ)  
+![DB Design](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Yizr3dNexy7OuRzz8ZjYu---figure---vyol61PVHORl1GLe6_LiGQ.png "DB Design")
 
-#### Application Architecture 
+#### Application Architecture
 ##### FrontEnd:
 The front end will be in a Flutter app. The source code structure will be:
 
@@ -105,15 +108,32 @@ car_wash
     - [ ] Payment
     - [ ] fulfilment
     - [ ] Post fulfilment
-
-
 ### Process Flows
 1. User Onboarding
-[﻿User Onboarding flow](https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4?elements=6OiPOHN-0O7lpb7hDrniPg)    
-2. Vendor KYC
-[﻿Vendor Verification Flow](https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4?elements=ZuO3WRez81VvfTrLQx8IuQ) 
+![Vendor Verification Flow](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---_uJKq4Wzfx0tB0wmfkP0F---figure---8IPrhxbv7nbIc3ZgK3RKfg.png "Vendor Verification Flow")
 
-### 
+1. Vendor KYC
+![User Onboarding flow](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---TWIHcSVbmq70FnkKDArgY---figure---eX196IJiVth2nI--bktezg.png "User Onboarding flow")
+
+
+
+Service addons
+
+- Dust Cleaning
+- Panel Cleaning
+- Vacuum Interior
+- Tyres & Rims Cleaning 
+- Dashboard Cleaning & Polishing
+- AC vents cleaning
+- Paint Sealant
+- Mat Cleaning
+- Seat Vacuum & Polishing 
+- Exterior Shampooing
+- water wash 
+    - sub by car type 
+    - 
+
+
 
 
 
