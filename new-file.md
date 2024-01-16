@@ -8,7 +8,7 @@ Test
 
 
 
-![Figure 2](/.eraser/c7HD4QRsoy7YpIkAmKo7___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---cXRZgbyP0ocQkfB9mUZNh---figure---At6S1pvZIhrfF0AG50K2UQ.png "Figure 2")
+![Figure 2](undefined "Figure 2")
 
 
 
