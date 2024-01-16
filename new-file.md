@@ -2,7 +2,7 @@
 
 Test
 
-![Figure 1](/.eraser/c7HD4QRsoy7YpIkAmKo7___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---cR4Thzc0mYLuBO-JpxN1p---figure---fQMbmpH6npI8MDUjNIExcg.png "Figure 1")
+![Figure 1](undefined "Figure 1")
 
 
 
