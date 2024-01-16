@@ -4,6 +4,8 @@ Test
 
 ![Figure 1](undefined "Figure 1")
 
+![Figure 2](/.eraser/c7HD4QRsoy7YpIkAmKo7___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Yfq7PeS-lGDLXtE27PYgN---figure---At6S1pvZIhrfF0AG50K2UQ.png "Figure 2")
+
 
 
 
