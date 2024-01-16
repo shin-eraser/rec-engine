@@ -13,7 +13,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---1CmG1623nF2_fdQOOsfnG---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 ### Prerequisites
 For dual write to work, writes to the ProductsDB should be centralized within a single service, whether it is a true microservice or a module within a monolith. If you are writing a lot of raw DB queries or accessing low level ORMs across your codebase, it will be a nightmare to ensure that all writes are coupled.
@@ -47,8 +47,6 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 ### What it is
 A separate process that queries for all recently changed records and updates them:
 
-
-
 ### Prerequisites
 In order for this to work, we'll just need to make sure our database records have an `updatedAt` field that is consistently changed. 
 
@@ -75,8 +73,6 @@ Lastly, if one of our Makers chooses to delete their Marker from our product and
 # Streaming Database Changes
 ### What it is
 We subscribe to changes at the database level and either process them directly or put them onto a message queue such as RabbitMQ or Kafka. (To learn more, watch this [﻿excellent talk](https://www.youtube.com/watch?v=fU9hR3kiOK0))
-
-
 
 ### Prerequisites
 The major limitation is that we need a database that supports this. Luckily, most popular DBs include a mechanism for this. For example:
@@ -119,7 +115,6 @@ And once Makers and Markers moves into the mainstream, it may be time to look in
 - We want to support a number of other complex querying and reporting use cases with a single architectural approach
 - We need to support high-throughput scale while still maintaining low latency
 Adding a row as test
-
 Test
 
 
