@@ -32,11 +32,12 @@ The Application is split into two broad repositories:
 This is a Python app written with Django.
 2. Car wash App [﻿github.com/Keith3895/car-wash-app](https://github.com/Keith3895/car-wash-app) 
 This is a Flutter app created for both Android and iOS.
-![repo Design](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---9mFU8BHBViaZrvgOj1cWw---figure---Ea6JM1DUewB3N9lfHsKzgQ.png "repo Design")
 
 ### Application Design
 #### DB Design
-![DB Design](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Yizr3dNexy7OuRzz8ZjYu---figure---vyol61PVHORl1GLe6_LiGQ.png "DB Design")
+![DB Design](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---N7_hrRva9yrolwxkzBuOV---figure---vyol61PVHORl1GLe6_LiGQ.png "DB Design")
+
+
 
 #### Application Architecture
 ##### FrontEnd:
@@ -110,12 +111,8 @@ car_wash
     - [ ] Post fulfilment
 ### Process Flows
 1. User Onboarding
-![Vendor Verification Flow](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---_uJKq4Wzfx0tB0wmfkP0F---figure---8IPrhxbv7nbIc3ZgK3RKfg.png "Vendor Verification Flow")
 
-1. Vendor KYC
-![User Onboarding flow](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---TWIHcSVbmq70FnkKDArgY---figure---eX196IJiVth2nI--bktezg.png "User Onboarding flow")
-
-
+2. Vendor KYC
 
 Service addons
 
@@ -129,10 +126,9 @@ Service addons
 - Mat Cleaning
 - Seat Vacuum & Polishing 
 - Exterior Shampooing
-- water wash 
-    - sub by car type 
-    - 
-
+- water wash
+ - sub by car type 
+![Figure 1](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---J9Esn__Qg9j3GD6DFeO-----figure---ZRgEq-q6CMWitrWYV5g49A.png "Figure 1")
 
 
 
