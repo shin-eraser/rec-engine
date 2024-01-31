@@ -1,5 +1,7 @@
 <p><a target="_blank" href="https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
+Here is a new line.
+
 Imagine you work at **Makers and Markers**, an online marketplace for artisanal whiteboards and whiteboard-related products. The marketplace has really taken off, and users are asking for a richer search experience to help them find what they're looking for. You definitely need the raw product information to be searchable, and also may want to add other data, like product reviews and ratings.
 
 You've decided that it's time to employ a specialized search database or service such as Elasticsearch. This leaves you with an important question: **how to get all of our data indexed and available for search?**
