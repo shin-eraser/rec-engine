@@ -1,7 +1,5 @@
 <p><a target="_blank" href="https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
-Here is a new line.
-
 Imagine you work at **Makers and Markers**, an online marketplace for artisanal whiteboards and whiteboard-related products. The marketplace has really taken off, and users are asking for a richer search experience to help them find what they're looking for. You definitely need the raw product information to be searchable, and also may want to add other data, like product reviews and ratings.
 
 You've decided that it's time to employ a specialized search database or service such as Elasticsearch. This leaves you with an important question: **how to get all of our data indexed and available for search?**
@@ -15,7 +13,9 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---1CmG1623nF2_fdQOOsfnG---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---RWS7IeYXIKUKipgyRHPLe---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+
+
 
 ### Prerequisites
 For dual write to work, writes to the ProductsDB should be centralized within a single service, whether it is a true microservice or a module within a monolith. If you are writing a lot of raw DB queries or accessing low level ORMs across your codebase, it will be a nightmare to ensure that all writes are coupled.
@@ -48,6 +48,8 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 # Batch Jobs
 ### What it is
 A separate process that queries for all recently changed records and updates them:
+
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---RWS7IeYXIKUKipgyRHPLe---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 ### Prerequisites
 In order for this to work, we'll just need to make sure our database records have an `updatedAt` field that is consistently changed. 
@@ -118,6 +120,7 @@ And once Makers and Markers moves into the mainstream, it may be time to look in
 - We need to support high-throughput scale while still maintaining low latency
 Adding a row as test
 Test
+
 
 
 <!--- Eraser file: https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC --->
