@@ -5,7 +5,7 @@ This service generates daily recommendations from the day's trending articles on
 
 It uses a ML-based recommendation system to that generates recommendations. It utilizes an online, nearline and offline layer. WHAT
 
-
+![Figure 1](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---JJrHedrs4v_fJc0wXNEzV---figure---un9UUFBt5u1GwMQ2Ch2pVg.png "Figure 1")
 
 loop asdf
 
