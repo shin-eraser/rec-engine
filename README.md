@@ -5,12 +5,14 @@ This service generates daily recommendations from the day's trending articles on
 
 It uses a ML-based recommendation system to that generates recommendations. It utilizes an online, nearline and offline layer. WHAT
 
+
+
+loop asdf
+
 ## Architecture
 Here is an overview of the recommendation system architecture:
 
 More things!
-
-
 
 [﻿assets](https://github.com/Keith3895/car-wash/blob/main/README.md#assets) 
 
