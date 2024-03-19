@@ -2,7 +2,7 @@
 
 Imagine you work at **Makers and Markers**, an online marketplace for artisanal whiteboards and whiteboard-related products. The marketplace has really taken off, and users are asking for a richer search experience to help them find what they're looking for. You definitely need the raw product information to be searchable, and also may want to add other data, like product reviews and ratings.
 
-![Kubernetes Diagram](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---CiL0xAfCKFfM-ttbeZczp---figure---acu3qPs4hCU2DQwk18gtGw.png "Kubernetes Diagram")
+![Kubernetes Diagram](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---7RttEN-mdPfqNNlupmsc2---figure---acu3qPs4hCU2DQwk18gtGw.png "Kubernetes Diagram")
 
 
 
@@ -17,7 +17,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Dual Write](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---BYtHY11mQjPpkhIdVjaDu---figure---B4S4yxUt8KpZajtgoHW4lQ.png "Dual Write")
+![Dual Write](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Fr3LgA_ea5CrCpVWWWJqa---figure---B4S4yxUt8KpZajtgoHW4lQ.png "Dual Write")
 
 ### Prerequisites
 For dual write to work, writes to the ProductsDB should be centralized within a single service, whether it is a true microservice or a module within a monolith. If you are writing a lot of raw DB queries or accessing low level ORMs across your codebase, it will be a nightmare to ensure that all writes are coupled.
@@ -51,14 +51,14 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 ### What it is
 A separate process that queries for all recently changed records and updates them:
 
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---uyuxHQFGcdO06DbskliUm---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---AlHIrtL_FGXUTvump63y3---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 ### Prerequisites
 In order for this to work, we'll just need to make sure our database records have an `updatedAt` field that is consistently changed. 
 
 
 
-![Scaling our batch service](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---A277cX3BFSmxpPT0g2gip---figure---ewjrHHkxf1O4RsBrBMNlpw.png "Scaling our batch service")
+![Scaling our batch service](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---i2HI7-6rHAQnIIB9HYR1H---figure---ewjrHHkxf1O4RsBrBMNlpw.png "Scaling our batch service")
 
 ### The Good
 It is **modular. **We can add a CSV upload feature to our vendor portal for bulk creates or updates of products, and not have to touch this part of the architecture. We could decide that we want our products to be in multiple categories and split `product.category` into a separate `category` table with a `product_category` join table, and we would only need to change a single query for fetching the new data.
