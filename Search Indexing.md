@@ -1,10 +1,8 @@
-<p><a target="_blank" href="https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+<p><a target="_blank" href="https://eraser-qa.web.app/workspace/w4GL4aLRsSTxj0AKF1C4" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
 Imagine you work at **Makers and Markers**, an online marketplace for artisanal whiteboards and whiteboard-related products. The marketplace has really taken off, and users are asking for a richer search experience to help them find what they're looking for. You definitely need the raw product information to be searchable, and also may want to add other data, like product reviews and ratings.
 
-![Kubernetes Diagram](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---7RttEN-mdPfqNNlupmsc2---figure---acu3qPs4hCU2DQwk18gtGw.png "Kubernetes Diagram")
-
-
+![Kubernetes Diagram](/.eraser/w4GL4aLRsSTxj0AKF1C4___Dd70dhsgniPyXUCKLav8Fk1MTv12___---figure---7MrRx4xY7OOohuttnYGMG---figure---QYDmbrAa1VSH_n47JyPF2g.png "Kubernetes Diagram")
 
 You've decided that it's time to employ a specialized search database or service such as Elasticsearch. This leaves you with an important question: **how to get all of our data indexed and available for search?**
 
@@ -17,7 +15,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Dual Write](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Fr3LgA_ea5CrCpVWWWJqa---figure---B4S4yxUt8KpZajtgoHW4lQ.png "Dual Write")
+
 
 ### Prerequisites
 For dual write to work, writes to the ProductsDB should be centralized within a single service, whether it is a true microservice or a module within a monolith. If you are writing a lot of raw DB queries or accessing low level ORMs across your codebase, it will be a nightmare to ensure that all writes are coupled.
@@ -51,14 +49,12 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 ### What it is
 A separate process that queries for all recently changed records and updates them:
 
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---AlHIrtL_FGXUTvump63y3---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+
 
 ### Prerequisites
 In order for this to work, we'll just need to make sure our database records have an `updatedAt` field that is consistently changed. 
 
 
-
-![Scaling our batch service](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---i2HI7-6rHAQnIIB9HYR1H---figure---ewjrHHkxf1O4RsBrBMNlpw.png "Scaling our batch service")
 
 ### The Good
 It is **modular. **We can add a CSV upload feature to our vendor portal for bulk creates or updates of products, and not have to touch this part of the architecture. We could decide that we want our products to be in multiple categories and split `product.category` into a separate `category` table with a `product_category` join table, and we would only need to change a single query for fetching the new data.
@@ -127,10 +123,5 @@ And once Makers and Markers moves into the mainstream, it may be time to look in
 
 
 
-
-
-
-
-
-
-<!--- Eraser file: https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC --->
+<!--- Eraser file: https://eraser-qa.web.app/workspace/w4GL4aLRsSTxj0AKF1C4 --->
+<a href="/Search Indexing-cloud-architecture-1.eraserdiagram"><img src="/.eraser/w4GL4aLRsSTxj0AKF1C4___Dd70dhsgniPyXUCKLav8Fk1MTv12___---diagram----021390a4e149defb8956774d6cd5431d.png" alt="" /></a>
