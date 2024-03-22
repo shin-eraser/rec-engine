@@ -2,7 +2,7 @@
 
 Imagine you work at **Makers and Markers**, an online marketplace for artisanal whiteboards and whiteboard-related products. The marketplace has really taken off, and users are asking for a richer search experience to help them find what they're looking for. You definitely need the raw product information to be searchable, and also may want to add other data, like product reviews and ratings.
 
-![Kubernetes Diagram](/.eraser/w4GL4aLRsSTxj0AKF1C4___Dd70dhsgniPyXUCKLav8Fk1MTv12___---figure---7MrRx4xY7OOohuttnYGMG---figure---QYDmbrAa1VSH_n47JyPF2g.png "Kubernetes Diagram")
+![Kubernetes Diagram](/.eraser/w4GL4aLRsSTxj0AKF1C4___Dd70dhsgniPyXUCKLav8Fk1MTv12___---figure---PJ1t9Ool7SodrOR9bj78G---figure---QYDmbrAa1VSH_n47JyPF2g.png "Kubernetes Diagram")
 
 You've decided that it's time to employ a specialized search database or service such as Elasticsearch. This leaves you with an important question: **how to get all of our data indexed and available for search?**
 
@@ -124,4 +124,4 @@ And once Makers and Markers moves into the mainstream, it may be time to look in
 
 
 <!--- Eraser file: https://eraser-qa.web.app/workspace/w4GL4aLRsSTxj0AKF1C4 --->
-<a href="/Search Indexing-cloud-architecture-1.eraserdiagram"><img src="/.eraser/w4GL4aLRsSTxj0AKF1C4___Dd70dhsgniPyXUCKLav8Fk1MTv12___---diagram----021390a4e149defb8956774d6cd5431d.png" alt="" /></a>
+<a href="/Search Indexing-kubernetes diagram-1.eraserdiagram"><img src="/.eraser/w4GL4aLRsSTxj0AKF1C4___Dd70dhsgniPyXUCKLav8Fk1MTv12___---diagram----d2e4772e4731e1e5c8a0904dff7e74bc-kubernetes-diagram.png" alt="" /></a>
