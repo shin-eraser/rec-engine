@@ -17,10 +17,3 @@ VPC Subnet [icon: aws-vpc]{
   }
 }
 Analytics [icon: aws-redshift]
-
-// Define connections
-API gateway > Lambda > Server > Data
-Server > Queue
-Queue > Worker1, Worker2, Worker3
-S3 < Data
-Compute Nodes > Analytics
