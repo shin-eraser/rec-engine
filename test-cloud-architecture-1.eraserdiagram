@@ -17,7 +17,3 @@ VPC Subnet [icon: aws-vpc]{
   }
 }
 Analytics [icon: aws-redshift]
-
-// Define connections
-API gateway > Lambda > Server > Data
-Server > Queue
