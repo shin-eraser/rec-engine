@@ -2,11 +2,8 @@
 
 asdf
 
+aasdf
 
-<!-- eraser-additional-content -->
-## Diagrams
-<!-- eraser-additional-files -->
-<a href="/test-cloud-architecture-1.eraserdiagram" data-element-id="TJuUOK8VWr3vhwSwK6pK2"><img src="/.eraser/clxuMFGdZRUzzmLyzTyD___Dd70dhsgniPyXUCKLav8Fk1MTv12___---diagram----097217e93dc3be010f7686558aa2c887.png" alt="" data-element-id="TJuUOK8VWr3vhwSwK6pK2" /></a>
-<!-- end-eraser-additional-files -->
-<!-- end-eraser-additional-content -->
+
+
 <!--- Eraser file: https://eraser-qa.web.app/workspace/clxuMFGdZRUzzmLyzTyD --->
