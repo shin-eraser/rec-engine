@@ -11,3 +11,4 @@ Server - Service: Data processing
 Server --> Client: Data response
 deactivate  Client
 Eraser1 > Eraser2: Hello
+Eraser2 > Eraser1: Quick change
