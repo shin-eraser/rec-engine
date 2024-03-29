@@ -10,3 +10,4 @@ loop [label: until success] {
 Server - Service: Data processing
 Server --> Client: Data response
 deactivate  Client
+Client -> API: Nice
