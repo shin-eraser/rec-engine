@@ -43,4 +43,3 @@ workspaces.folderId > folders.id
 workspaces.teamId > teams.id
 chat.workspaceId > workspaces.id
 invite.workspaceId > workspaces.id
-invite.inviterId > users.id
