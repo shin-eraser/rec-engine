@@ -9,4 +9,3 @@ loop [label: until success] {
 }
 Server - Service: Data processing
 deactivate  Client
-Eraser1 > Eraser2: Hello
