@@ -16,4 +16,3 @@ VPC Subnet [icon: aws-vpc]{
     Worker3 [icon: aws-ec2]
   }
 }
-Analytics [icon: aws-redshift]
