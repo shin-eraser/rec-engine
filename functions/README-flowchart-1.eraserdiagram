@@ -16,3 +16,6 @@ Has repro? > Ask for repro [shape: oval, icon: repeat]: No
 Can be package? > Well specced? [shape: diamond, icon: check-square]: No
 Can be package? > Define as package [shape: oval, icon: package]: Yes
 Well specced? > Issue ready to claim: Yes
+Issue ready to claim > Hello: nice
+
+
