@@ -8,6 +8,5 @@ loop [label: until success] {
     Service [icon: tool] > Service: Check availability
 }
 Server - Service: Data processing
-Server --> Client: Data response
 deactivate  Client
 Eraser1 > Eraser2: Hello
