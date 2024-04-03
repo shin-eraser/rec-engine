@@ -9,7 +9,17 @@ asdfasdf
 | A | 1 | 1 | 12 | feawawefeaw | faewfeawfaew faewfeawfaew faewfeawfaew faewfeawfaew | faewfeawfaew | faewfeawfaew | faewfeawfaew | awefawefeafaweewa | awefawefeafaweewa | awefawefeafaweewa |
 | B | 2 | 2 | 2 | 2 |  |  |  |  |  |  |  |
 | C | 3 | 3 | 3 | 1 |  |  |  |  |  |  |  |
-![Figure 1](/.eraser/0rDPxC3fGVc4zCD9EU11___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---gZIOGjR8tPXZbskAh-GP8---figure---4k9D0SQuT00RkA6xwQnwOw.png "Figure 1")
+awefewafaw
+
+
+
+
+
+awefeawf
+
+
+
+![Figure 1](/.eraser/0rDPxC3fGVc4zCD9EU11___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---992HvRnSXQUOvuWT_UoMs---figure---4k9D0SQuT00RkA6xwQnwOw.png "Figure 1")
 
 
 
