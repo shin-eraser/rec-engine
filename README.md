@@ -12,11 +12,13 @@ More things!
 
 [﻿assets](https://github.com/Keith3895/car-wash/blob/main/README.md#assets) 
 
-![MileIQ Architecture3](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---OyxpJ0mQx-G_kiT60uPWC---figure---myqkt4nTCU8jupUQuGAf2w.png "MileIQ Architecture3")
+![MileIQ Architecture4](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---7MnXXSD3SACc78OXSWftT---figure---DILFSWwG8p6SpSwUzcfkuQ.png "MileIQ Architecture4")
 
-![MileIQ Architecture2](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---N7OZiz_tyebz3fJRtIbSQ---figure---xJjF3j9MDxQEsV-mrAGOfw.png "MileIQ Architecture2")
+![MileIQ Architecture3](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---o_40CWPogYDKvs4Kcy7md---figure---myqkt4nTCU8jupUQuGAf2w.png "MileIQ Architecture3")
 
-![MileIQ Architecture](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---ww5a8hymnUISG0btWrMI9---figure---un9UUFBt5u1GwMQ2Ch2pVg.png "MileIQ Architecture")
+![MileIQ Architecture2](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---2jJjLkvxBnyKhTrvGHfAK---figure---xJjF3j9MDxQEsV-mrAGOfw.png "MileIQ Architecture2")
+
+![MileIQ Architecture](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---gz-rN8MN1A3s3TDOopmlZ---figure---un9UUFBt5u1GwMQ2Ch2pVg.png "MileIQ Architecture")
 
 
 
@@ -27,6 +29,7 @@ More things!
 <a href="/README-cloud-architecture-1.eraserdiagram" data-element-id="yIA-I8o-A5xGjqJSy7bza"><img src="/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----097217e93dc3be010f7686558aa2c887.png" alt="" data-element-id="yIA-I8o-A5xGjqJSy7bza" /></a>
 <a href="/README-cloud-architecture-2.eraserdiagram" data-element-id="vYlR0XUmhlBZT2_VefPqI"><img src="/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----097217e93dc3be010f7686558aa2c887.png" alt="" data-element-id="vYlR0XUmhlBZT2_VefPqI" /></a>
 <a href="/README-cloud-architecture-3.eraserdiagram" data-element-id="g5X0EVv9M88IsTlkN-aBX"><img src="/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----097217e93dc3be010f7686558aa2c887.png" alt="" data-element-id="g5X0EVv9M88IsTlkN-aBX" /></a>
+<a href="/README-cloud-architecture-4.eraserdiagram" data-element-id="bgGnu6Fgx8D97zwe1NwoC"><img src="/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----097217e93dc3be010f7686558aa2c887.png" alt="" data-element-id="bgGnu6Fgx8D97zwe1NwoC" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/wH68eC8NIc1O4ueubFSJ --->
