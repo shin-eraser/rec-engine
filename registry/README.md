@@ -9,8 +9,15 @@ asdfasdf
 | A | 1 | 1 | 12 | feawawefeaw | faewfeawfaew faewfeawfaew faewfeawfaew faewfeawfaew | faewfeawfaew | faewfeawfaew | faewfeawfaew | awefawefeafaweewa | awefawefeafaweewa | awefawefeafaweewa |
 | B | 2 | 2 | 2 | 2 |  |  |  |  |  |  |  |
 | C | 3 | 3 | 3 | 1 |  |  |  |  |  |  |  |
+![Figure 1](/.eraser/0rDPxC3fGVc4zCD9EU11___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---gZIOGjR8tPXZbskAh-GP8---figure---4k9D0SQuT00RkA6xwQnwOw.png "Figure 1")
 
 
 
 
+<!-- eraser-additional-content -->
+## Diagrams
+<!-- eraser-additional-files -->
+<a href="/registry/README-cloud-architecture-1.eraserdiagram" data-element-id="nsL45_sF7NbaCDaBiab36"><img src="/.eraser/0rDPxC3fGVc4zCD9EU11___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----097217e93dc3be010f7686558aa2c887.png" alt="" data-element-id="nsL45_sF7NbaCDaBiab36" /></a>
+<!-- end-eraser-additional-files -->
+<!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/0rDPxC3fGVc4zCD9EU11 --->
