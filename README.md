@@ -5,8 +5,6 @@ This service generates daily recommendations from the day's trending articles on
 
 It uses a ML-based recommendation system to that generates recommendations. It utilizes an online, nearline and offline layers.
 
-![Figure 1](undefined "Figure 1")
-
 ## Architecture
 Here is an overview of the recommendation system architecture:
 
