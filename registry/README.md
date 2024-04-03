@@ -6,9 +6,9 @@ asdfasdf
 
 | Title | Number |  |  |  |  |  |  |  |  |  |  |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| A | 1 |  |  | feawawefeaw | faewfeawfaew faewfeawfaew faewfeawfaew faewfeawfaew | faewfeawfaew | faewfeawfaew | faewfeawfaew | awefawefeafaweewa | awefawefeafaweewa | awefawefeafaweewa |
-| B | 2 |  |  |  |  |  |  |  |  |  |  |
-| C | 3 |  |  |  |  |  |  |  |  |  |  |
+| A | 1 | 1 | 12 | feawawefeaw | faewfeawfaew faewfeawfaew faewfeawfaew faewfeawfaew | faewfeawfaew | faewfeawfaew | faewfeawfaew | awefawefeafaweewa | awefawefeafaweewa | awefawefeafaweewa |
+| B | 2 | 2 | 2 | 2 |  |  |  |  |  |  |  |
+| C | 3 | 3 | 3 | 1 |  |  |  |  |  |  |  |
 
 
 
