@@ -12,17 +12,9 @@ More things!
 
 [﻿assets](https://github.com/Keith3895/car-wash/blob/main/README.md#assets) 
 
+![MileIQ Architecture2](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---_Kmw2M_A7kG80vO6PxqTM---figure---xJjF3j9MDxQEsV-mrAGOfw.png "MileIQ Architecture2")
 
-
-
-
-
-
-![MileIQ Architecture](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---iKSiRW0IFr_mo5FcRaHXY---figure---un9UUFBt5u1GwMQ2Ch2pVg.png "MileIQ Architecture")
-
-
-
-
+![MileIQ Architecture](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---mvuylo8dPw1GT3EN_yGje---figure---un9UUFBt5u1GwMQ2Ch2pVg.png "MileIQ Architecture")
 
 
 
