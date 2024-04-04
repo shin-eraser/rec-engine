@@ -1,0 +1,47 @@
+cloud-architecture-diagram
+
+Vendor Portal [icon: monitor]
+
+Public Site [icon: mobile]
+
+API Layer [color: black] {
+  Product Service [icon: pencil]
+
+  Review Service [icon: clipboard]
+
+  Rating Service [icon: star]
+}
+
+App Database [icon: database, color: gray] {
+  ProductsDB [icon: postgres]
+
+  ReviewDB [icon: postgres]
+
+  RatingDB [icon: postgres]
+}
+
+Search [icon: magnifying-glass, color: green] {
+  SearchDB [icon: elasticsearch, color: green]
+}
+
+Indexing Service [icon: code, color: green] {
+  Cron Job [icon: clock]
+}
+
+Vendor Portal > API Layer
+Public Site > API Layer
+Product Service > ProductsDB
+Rating Service > RatingDB
+Review Service > ReviewDB
+
+Cron Job < ProductsDB, ReviewDB, RatingDB
+
+
+Cron Job > SearchDB
+
+
+
+
+
+
+

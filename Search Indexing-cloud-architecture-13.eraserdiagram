@@ -1,0 +1,30 @@
+cloud-architecture-diagram
+
+// Define groups and nodes
+Authentication {
+  GitHub [icon: github]
+  LinkedIn [icon: linkedin]
+}
+
+Frontend {
+  React [icon: react]
+  Vercel [icon: vercel]
+}
+
+Databases {
+  User activities [icon: aws-neptune]
+  Job listings [icon: aws-rds]
+}
+
+Machine Learning {
+  Recommendations [icon: aws-sagemaker]
+}
+
+Payment {
+  Stripe [icon: stripe]
+}
+
+// Define connections
+GitHub, LinkedIn > React > Vercel > User activities, Job listings
+User activities, Job listings > Recommendations
+Job listings > Stripe

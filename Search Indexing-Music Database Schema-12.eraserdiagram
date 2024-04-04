@@ -1,0 +1,75 @@
+entity-relationship-diagram
+
+title Music Database Schema
+albums [icon: album]{
+  AlbumId int pk
+  ArtistId int
+  Title string
+}
+genres [icon: hash]{
+  GenreId int pk
+  Name string
+}
+artists [icon: user]{
+  ArtistId int pk
+  Name string
+}
+playlists [icon: list]{
+  Name string
+  PlaylistId int pk
+}
+playlist_track {
+  PlaylistId int
+  TrackId int
+}
+tracks [icon: music]{
+  AlbumId int
+  Bytes int
+  Composer string
+  GenreId int
+  MediaTypeId int
+  Milliseconds int
+  Name string
+  TrackId int pk
+  UnitPrice float
+}
+invoices [icon: file-text]{
+  BillingAddress string
+  BillingCity string
+  BillingCountry string
+  BillingPostalCode string
+  BillingState string
+  CustomerId int
+  InvoiceDate timestamp
+  InvoiceId int pk
+  Total float
+}
+invoice_items {
+  InvoiceId int
+  InvoiceLineId int pk
+  Quantity int
+  TrackId int
+  UnitPrice float
+}
+media_types [icon: disc]{
+  MediaTypeId int pk
+  Name string
+}
+albums.ArtistId > artists.ArtistId
+albums.AlbumId < tracks.AlbumId
+genres.GenreId < tracks.GenreId
+artists.ArtistId < albums.AlbumId
+playlists.PlaylistId < playlist_track.PlaylistId
+playlist_track.PlaylistId > playlists.PlaylistId
+playlist_track.TrackId > tracks.TrackId
+tracks.TrackId < playlist_track.TrackId
+tracks.AlbumId > albums.AlbumId
+tracks.GenreId > genres.GenreId
+tracks.MediaTypeId > media_types.MediaTypeId
+tracks.TrackId < invoice_items.TrackId
+invoices.CustomerId > customers.CustomerId
+invoices.InvoiceId < invoice_items.InvoiceId
+invoice_items.InvoiceId > invoices.InvoiceId
+invoice_items.TrackId > tracks.TrackId
+media_types.MediaTypeId < tracks.MediaTypeId
+

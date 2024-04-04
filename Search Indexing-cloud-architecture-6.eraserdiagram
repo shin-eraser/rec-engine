@@ -1,0 +1,14 @@
+cloud-architecture-diagram
+
+Reviews DB [icon: database]
+Products DB [icon: database]
+Cron [icon: timer]
+Queue [icon: layers]
+Writer 1 [icon: edit]
+Writer 2 [icon: edit]
+Writer 3 [icon: edit]
+
+Reviews DB > Cron
+Products DB > Cron
+Cron > Queue
+Queue > Writer 1, Writer 2, Writer 3

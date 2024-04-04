@@ -1,0 +1,16 @@
+sequence-diagram
+
+Client [icon: monitor]> Server [icon: code]: POST /create-payment-intent
+Server > Stripe [icon: stripe]: Create PaymentIntent
+Stripe > Server: PaymentIntent with client_secret
+Server > Client: clientSecret
+Client > Stripe: Initialize elements with clientSecret
+Client > Stripe: Create linkAuthentication element
+Client > Stripe: Create payment element
+Client [icon: monitor]> Server [icon: code]: Submit payment form
+Client > Stripe: Confirm payment with return_url and receipt_email
+Stripe > Client: Redirect to return_url or show error
+Client [icon: monitor]> Server [icon: code]: GET /checkout.html?payment_intent_client_secret
+Server > Stripe [icon: stripe]: Retrieve PaymentIntent
+Stripe > Server: PaymentIntent status
+Server > Client: Payment status message

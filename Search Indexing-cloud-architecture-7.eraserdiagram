@@ -1,7 +1,5 @@
 cloud-architecture-diagram
 
-title kubernetes diagram
-
 // Define groups and nodes
 Cloud Provider API [icon: settings]
 AWS [icon: aws]
