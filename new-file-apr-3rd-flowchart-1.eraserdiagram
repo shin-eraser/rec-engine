@@ -1,0 +1,18 @@
+flowchart-diagram
+
+// Define nodes and relationships "A > B"
+
+// Set shape and icon properties in "[]"
+Issue type? [shape: oval, icon: file-text] > Bug [icon: bug]
+Issue type? > Feature [icon: zap]
+Bug > Duplicate? [shape: diamond, icon: copy]
+Feature > Can be package? [shape: diamond, icon: package]
+
+// Add labels to relationships after ":"
+Duplicate? > Mark duplicate [shape: oval, icon: copy]: Yes
+Duplicate? > Has repro? [shape: diamond, icon: repeat]: No
+Has repro? > Issue ready to claim [shape: oval, icon: send]: Yes
+Has repro? > Ask for repro [shape: oval, icon: repeat]: No
+Can be package? > Well specced? [shape: diamond, icon: check-square]: No
+Can be package? > Define as package [shape: oval, icon: package]: Yes
+Well specced? > Issue ready to claim: YesF
