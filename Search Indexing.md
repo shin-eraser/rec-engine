@@ -120,7 +120,7 @@ For more mature products or to support more complex features, batch jobs that pe
 And once Makers and Markers moves into the mainstream, it may be time to look into tapping directly into our database's change log. This approach is best if:
 - We want to support a number of other complex querying and reporting use cases with a single architectural approach
 - We need to support high-throughput scale while still maintaining low latency
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---WZUeDikAlFrzxibcEaGde---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---R09J6s1OgNaZqZwfpszC1---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 
 
