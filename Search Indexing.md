@@ -51,6 +51,8 @@ A separate process that queries for all recently changed records and updates the
 
 ![Batch job](undefined "Batch job")
 
+![Kubernetes Diagram](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---XhT9zkx3ySShA6SN70M5C---figure---acu3qPs4hCU2DQwk18gtGw.png "Kubernetes Diagram")
+
 ### Prerequisites
 In order for this to work, we'll just need to make sure our database records have an `updatedAt` field that is consistently changed. 
 
@@ -120,7 +122,7 @@ For more mature products or to support more complex features, batch jobs that pe
 And once Makers and Markers moves into the mainstream, it may be time to look into tapping directly into our database's change log. This approach is best if:
 - We want to support a number of other complex querying and reporting use cases with a single architectural approach
 - We need to support high-throughput scale while still maintaining low latency
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---CwWD1lcjJ-5RjvxWZFZT8---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Z5G10agqbcXtF9kzmV0ap---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 
 
