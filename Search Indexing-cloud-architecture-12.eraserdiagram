@@ -1,0 +1,29 @@
+cloud-architecture-diagram
+
+direction down
+
+Test operator [icon: laptop]
+Google Cloud {
+  Internal TCP [icon: gcp-cloud-load-balancing, label: "Internal TCP/UDP Load Balancer"]
+  Google Kubernetes Engine [icon: gcp-kubernetes-engine] {
+    locust-master Service (ClusterIP) [icon: gcp-kubernetes-engine]
+    locust-master-web Service (LoadBalancer) [icon: gcp-kubernetes-engine]
+    Locust master Pod [icon: gcp-kubernetes-engine]
+    Locust worker Pod1 [icon: gcp-kubernetes-engine, label: "Locust worker Pod"]
+    Locust worker Pod2 [icon: gcp-kubernetes-engine, label: "Locust worker Pod"]
+    Locust worker Pod3 [icon: gcp-kubernetes-engine, label: "Locust worker Pod"]
+    Locust worker Pod4 [icon: gcp-kubernetes-engine, label: "Locust worker Pod"]
+  }
+  Sample application App Engine [icon: gcp-app-engine]
+}
+
+Test operator > Internal TCP:Web interface Port8089
+Internal TCP > locust-master-web Service (LoadBalancer)
+locust-master-web Service (LoadBalancer) > Locust master Pod:Port8089
+locust-master Service (ClusterIP) > Locust master Pod:Port5557, 5558
+Locust worker Pod1 > locust-master Service (ClusterIP):Load metrics
+Locust master Pod > Locust worker Pod1 > Sample application App Engine
+Locust master Pod > Locust worker Pod2 > Sample application App Engine
+Locust master Pod > Locust worker Pod3 > Sample application App Engine
+Locust master Pod > Locust worker Pod4
+Locust worker Pod4 > Sample application App Engine:REST traffic

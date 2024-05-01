@@ -1,6 +1,5 @@
 sequence-diagram
 
-
 title User Authentication Flow
 
 User [icon: user] > Auth0_SDK [icon: key]: Selects Login
@@ -24,4 +23,3 @@ else [label: if XML endpoint] {
     API > Application: XML data
 }
 deactivate Application
-

@@ -2,7 +2,7 @@
 
 Imagine you work at **Makers and Markers**, an online marketplace for artisanal whiteboards and whiteboard-related products. The marketplace has really taken off, and users are asking for a richer search experience to help them find what they're looking for. You definitely need the raw product information to be searchable, and also may want to add other data, like product reviews and ratings.
 
-![Kubernetes Diagram](undefined "Kubernetes Diagram")
+![Database Change Streaming](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Gygl9vzV4IoSl4OZ3BYsd---figure---Z2Obas_BiKW-IrdP1fO-uQ.png "Database Change Streaming")
 
 You've decided that it's time to employ a specialized search database or service such as Elasticsearch. This leaves you with an important question: **how to get all of our data indexed and available for search?**
 
@@ -15,7 +15,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Dual Write](undefined "Dual Write")
+![Dual Write](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---z3JaHrzouzlPZ9qcRKnmz---figure---B4S4yxUt8KpZajtgoHW4lQ.png "Dual Write")
 
 ### Prerequisites
 For dual write to work, writes to the ProductsDB should be centralized within a single service, whether it is a true microservice or a module within a monolith. If you are writing a lot of raw DB queries or accessing low level ORMs across your codebase, it will be a nightmare to ensure that all writes are coupled.
@@ -51,7 +51,9 @@ A separate process that queries for all recently changed records and updates the
 
 ![Batch job](undefined "Batch job")
 
-![Kubernetes Diagram](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---XhT9zkx3ySShA6SN70M5C---figure---acu3qPs4hCU2DQwk18gtGw.png "Kubernetes Diagram")
+![Kubernetes Diagram](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Xn6tYbF4r0Q61WvaDTOrf---figure---acu3qPs4hCU2DQwk18gtGw.png "Kubernetes Diagram")
+
+
 
 ### Prerequisites
 In order for this to work, we'll just need to make sure our database records have an `updatedAt` field that is consistently changed. 
@@ -122,7 +124,6 @@ For more mature products or to support more complex features, batch jobs that pe
 And once Makers and Markers moves into the mainstream, it may be time to look into tapping directly into our database's change log. This approach is best if:
 - We want to support a number of other complex querying and reporting use cases with a single architectural approach
 - We need to support high-throughput scale while still maintaining low latency
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Z5G10agqbcXtF9kzmV0ap---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 
 
@@ -130,20 +131,18 @@ And once Makers and Markers moves into the mainstream, it may be time to look in
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/Search Indexing-cloud-architecture-1.eraserdiagram" data-element-id="CM5mBMuwy_d6MWmwQ-gX-"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----8367fa6eca43af7f9e0c0cf86b1dd4e1.png" alt="" data-element-id="CM5mBMuwy_d6MWmwQ-gX-" /></a>
-<a href="/Search Indexing-cloud-architecture-2.eraserdiagram" data-element-id="wN4BjVLkZf3ZcxUbqFrnp"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----d43561297f49f7223d0e9ab95f025c6d.png" alt="" data-element-id="wN4BjVLkZf3ZcxUbqFrnp" /></a>
-<a href="/Search Indexing-cloud-architecture-3.eraserdiagram" data-element-id="LTr9lvaJTQwi4LPWmhqlx"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----1251132c191aeea76cecd4fa597ea1c2.png" alt="" data-element-id="LTr9lvaJTQwi4LPWmhqlx" /></a>
+<a href="/Search Indexing-cloud-architecture-1.eraserdiagram" data-element-id="CM5mBMuwy_d6MWmwQ-gX-"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----e679acbb3c3e9ec4d58753c9fd2f53c1.png" alt="" data-element-id="CM5mBMuwy_d6MWmwQ-gX-" /></a>
+<a href="/Search Indexing-cloud-architecture-2.eraserdiagram" data-element-id="wN4BjVLkZf3ZcxUbqFrnp"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----db20a1bb0469ef09f7bebbe0d5755196.png" alt="" data-element-id="wN4BjVLkZf3ZcxUbqFrnp" /></a>
+<a href="/Search Indexing-cloud-architecture-3.eraserdiagram" data-element-id="LTr9lvaJTQwi4LPWmhqlx"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----a3b62e08847a353f10db19c1b9d79160.png" alt="" data-element-id="LTr9lvaJTQwi4LPWmhqlx" /></a>
 <a href="/Search Indexing-cloud-architecture-4.eraserdiagram" data-element-id="2A-JoOdemLazssQUWYccu"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----8f6822d300a66cd9d2d94772a61009f0.png" alt="" data-element-id="2A-JoOdemLazssQUWYccu" /></a>
 <a href="/Search Indexing-cloud-architecture-5.eraserdiagram" data-element-id="j71SW5eVzOyPgjcjo_iDd"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----41ec3c1f81787a682aed2277c01c9cac.png" alt="" data-element-id="j71SW5eVzOyPgjcjo_iDd" /></a>
 <a href="/Search Indexing-cloud-architecture-6.eraserdiagram" data-element-id="EH0kVLp_Xmnt21fEAAt_z"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----5f3d3cb8ae9b42eb0d2667391175c0e8.png" alt="" data-element-id="EH0kVLp_Xmnt21fEAAt_z" /></a>
-<a href="/Search Indexing-cloud-architecture-7.eraserdiagram" data-element-id="uNBRwYv_4Fdza0zQM7BRk"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----021390a4e149defb8956774d6cd5431d.png" alt="" data-element-id="uNBRwYv_4Fdza0zQM7BRk" /></a>
-<a href="/Search Indexing-sequence-diagram-8.eraserdiagram" data-element-id="J-Btd_85RcFD-aU6odkYc"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----dc7d5d76c79b54dcb909849d85263fd6.png" alt="" data-element-id="J-Btd_85RcFD-aU6odkYc" /></a>
-<a href="/Search Indexing-entity-relationship-9.eraserdiagram" data-element-id="VxKmuux6eWvrpW0v-IiUR"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----96579b00c6de1dcea7933f206b281a90.png" alt="" data-element-id="VxKmuux6eWvrpW0v-IiUR" /></a>
-<a href="/Search Indexing-Auth0 Authorization Code Flow-10.eraserdiagram" data-element-id="vO3MmJiO-bCzmZiBV3Gyx"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----866b653dfd87ddd425f7ed3e572cae95-Auth0-Authorization-Code-Flow.png" alt="" data-element-id="vO3MmJiO-bCzmZiBV3Gyx" /></a>
-<a href="/Search Indexing-cloud-architecture-11.eraserdiagram" data-element-id="rKIfNL5JdjN4BLzSplRcm"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----097217e93dc3be010f7686558aa2c887.png" alt="" data-element-id="rKIfNL5JdjN4BLzSplRcm" /></a>
-<a href="/Search Indexing-Music Database Schema-12.eraserdiagram" data-element-id="3-9kj-vfbwrJTb2Dbq7W6"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----f0800f2940e081b53e2f4c4ee1a877a8-Music-Database-Schema.png" alt="" data-element-id="3-9kj-vfbwrJTb2Dbq7W6" /></a>
-<a href="/Search Indexing-cloud-architecture-13.eraserdiagram" data-element-id="owdHA1luBSX5h9Y2Q-7D5"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----a4b34b73ba89e4959d45ed5e14d48f5e.png" alt="" data-element-id="owdHA1luBSX5h9Y2Q-7D5" /></a>
-<a href="/Search Indexing-User Authentication Flow-14.eraserdiagram" data-element-id="tvvA3QaerwmZQdgOEbhWD"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----11efe0831296fda6040b89516cada12a-User-Authentication-Flow.png" alt="" data-element-id="tvvA3QaerwmZQdgOEbhWD" /></a>
+<a href="/Search Indexing-cloud-architecture-7.eraserdiagram" data-element-id="uNBRwYv_4Fdza0zQM7BRk"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----60f6a2158b8cfa247aab5934634ea4a4.png" alt="" data-element-id="uNBRwYv_4Fdza0zQM7BRk" /></a>
+<a href="/Search Indexing-entity-relationship-8.eraserdiagram" data-element-id="VxKmuux6eWvrpW0v-IiUR"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----96579b00c6de1dcea7933f206b281a90.png" alt="" data-element-id="VxKmuux6eWvrpW0v-IiUR" /></a>
+<a href="/Search Indexing-Auth0 Authorization Code Flow-9.eraserdiagram" data-element-id="vO3MmJiO-bCzmZiBV3Gyx"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----866b653dfd87ddd425f7ed3e572cae95-Auth0-Authorization-Code-Flow.png" alt="" data-element-id="vO3MmJiO-bCzmZiBV3Gyx" /></a>
+<a href="/Search Indexing-cloud-architecture-10.eraserdiagram" data-element-id="rKIfNL5JdjN4BLzSplRcm"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----097217e93dc3be010f7686558aa2c887.png" alt="" data-element-id="rKIfNL5JdjN4BLzSplRcm" /></a>
+<a href="/Search Indexing-User Authentication Flow-11.eraserdiagram" data-element-id="tvvA3QaerwmZQdgOEbhWD"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----0a1e748a5bf4a6c074a8396d3e80cb71-User-Authentication-Flow.png" alt="" data-element-id="tvvA3QaerwmZQdgOEbhWD" /></a>
+<a href="/Search Indexing-cloud-architecture-12.eraserdiagram" data-element-id="n8UHHttneRWuVrhhT8dZK"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----58b7e24e8f789cb7d9f5e6a9914cab66.png" alt="" data-element-id="n8UHHttneRWuVrhhT8dZK" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC --->

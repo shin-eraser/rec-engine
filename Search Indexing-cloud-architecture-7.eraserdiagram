@@ -33,6 +33,3 @@ api > ccm, sched, etcd, cm
 kubelet1, kproxy1, kubelet2, kproxy2, kubelet3, kproxy3 > api
 AWS > Monitoring
 Monitoring > Dtabase [icon: database]
-
-
-
