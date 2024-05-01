@@ -2,7 +2,7 @@
 
 Imagine you work at **Makers and Markers**, an online marketplace for artisanal whiteboards and whiteboard-related products. The marketplace has really taken off, and users are asking for a richer search experience to help them find what they're looking for. You definitely need the raw product information to be searchable, and also may want to add other data, like product reviews and ratings.
 
-![Database Change Streaming](undefined "Database Change Streaming")
+![Database Change Streaming](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---suKF4HCK8m8ib-30Togno---figure---Z2Obas_BiKW-IrdP1fO-uQ.png "Database Change Streaming")
 
 You've decided that it's time to employ a specialized search database or service such as Elasticsearch. This leaves you with an important question: **how to get all of our data indexed and available for search?**
 
@@ -15,7 +15,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Dual Write](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---r5tVVaXw1bz0Ns8tdQlkw---figure---B4S4yxUt8KpZajtgoHW4lQ.png "Dual Write")
+![Dual Write](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Fjzq9IQnwEY0PkdHVBzK8---figure---B4S4yxUt8KpZajtgoHW4lQ.png "Dual Write")
 
 ### Prerequisites
 For dual write to work, writes to the ProductsDB should be centralized within a single service, whether it is a true microservice or a module within a monolith. If you are writing a lot of raw DB queries or accessing low level ORMs across your codebase, it will be a nightmare to ensure that all writes are coupled.
@@ -51,7 +51,7 @@ A separate process that queries for all recently changed records and updates the
 
 ![Batch job](undefined "Batch job")
 
-![Kubernetes Diagram](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---KuNZLBAUvWHnQMc2e7ESA---figure---acu3qPs4hCU2DQwk18gtGw.png "Kubernetes Diagram")
+![Kubernetes Diagram](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---svaYrFUHUN2MSAqtq4mw1---figure---acu3qPs4hCU2DQwk18gtGw.png "Kubernetes Diagram")
 
 
 
