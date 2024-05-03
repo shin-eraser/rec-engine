@@ -13,7 +13,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---BuC2pmEdJ61VOhufGmQWA---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---_64MXjSJDlkm2XrkziXDl---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 
 
@@ -49,7 +49,7 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 ### What it is
 A separate process that queries for all recently changed records and updates them:
 
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---BuC2pmEdJ61VOhufGmQWA---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---_64MXjSJDlkm2XrkziXDl---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 
 
