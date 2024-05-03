@@ -1,0 +1,17 @@
+sequence-diagram
+
+// Each row is a msg between columns
+User [icon: user] > Client App: "Login"
+loop {
+  Client App [icon: app] > Client App: Generate code verifier and challenge
+}
+Client App > Auth Server: Sends code challenge to /authorize endpoint and requests "Authorization Code"
+Auth Server [icon: server] > User: Redirect user to login (and prompts for authorization)
+User > Auth Server: User approves scopes
+Auth Server > Client App: Server sends "Authorization Code" to web app
+Client App > Auth Server: Sends code verifier and Authorization Code to /oauth/token endpoint
+loop {
+  Auth Server > Auth Server: Validates code verifier and challenge
+}
+Auth Server > Client App: Sends ID Token + Access Token
+Client App > Resource Server (API) [icon: api]: Web app attaches access token to all future requests
