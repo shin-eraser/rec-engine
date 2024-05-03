@@ -1,0 +1,10 @@
+cloud-architecture-diagram
+
+Reviews DB [icon: database]
+Products DB [icon: database]
+
+ReviewCron [icon: timer]
+ProductCron [icon: timer]
+
+Reviews DB > ReviewCron
+Products DB > ProductCron

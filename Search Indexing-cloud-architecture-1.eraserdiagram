@@ -1,0 +1,20 @@
+cloud-architecture-diagram
+
+Vendor Portal [icon: monitor]
+
+API Layer [color: black] {
+  Product Service [icon: pencil]
+}
+
+
+App Database [icon: database, color: gray] {
+  ProductsDB [icon: postgres]
+}
+
+Search [icon: magnifying-glass, color: green] {
+  SearchDB [icon: elasticsearch, color: green]
+}
+
+Vendor Portal > API Layer: HTTPS request
+Product Service > ProductsDB: Write
+Product Service > SearchDB: Write

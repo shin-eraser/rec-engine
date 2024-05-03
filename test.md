@@ -1,4 +1,4 @@
-<p><a target="_blank" href="https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+<p><a target="_blank" href="https://app.eraser.io/workspace/Lcifm64UPcgTlrIAkvDe" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
 # Car Wash
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white "")
@@ -32,10 +32,9 @@ The Application is split into two broad repositories:
 This is a Python app written with Django.
 2. Car wash App [﻿github.com/Keith3895/car-wash-app](https://github.com/Keith3895/car-wash-app) 
 This is a Flutter app created for both Android and iOS.
-
 ### Application Design
 #### DB Design
-![DB Design](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---N7_hrRva9yrolwxkzBuOV---figure---vyol61PVHORl1GLe6_LiGQ.png "DB Design")
+![DB Design](undefined "DB Design")
 
 
 
@@ -111,9 +110,7 @@ car_wash
     - [ ] Post fulfilment
 ### Process Flows
 1. User Onboarding
-
 2. Vendor KYC
-
 Service addons
 
 - Dust Cleaning
@@ -127,10 +124,10 @@ Service addons
 - Seat Vacuum & Polishing 
 - Exterior Shampooing
 - water wash
- - sub by car type 
-![Figure 1](/.eraser/18LcLCCLXKxtpvQ6rrf4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---J9Esn__Qg9j3GD6DFeO-----figure---ZRgEq-q6CMWitrWYV5g49A.png "Figure 1")
+- sub by car type
 
 
 
 
-<!--- Eraser file: https://app.eraser.io/workspace/18LcLCCLXKxtpvQ6rrf4 --->
+
+<!--- Eraser file: https://app.eraser.io/workspace/Lcifm64UPcgTlrIAkvDe --->
