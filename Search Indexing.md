@@ -13,7 +13,7 @@ This article covers three approaches, exploring the trade-offs for each:
 ### What it is
 Every time you make a change (create, update, or delete) to the primary datastore, the same service also writes the relevant changes directly to the search DB.
 
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---wjBVo58ArPRQd5iSu3IF6---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---BuC2pmEdJ61VOhufGmQWA---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 
 
@@ -49,7 +49,7 @@ Figuring out how to covert that into a bulk write to our SearchDB introduces new
 ### What it is
 A separate process that queries for all recently changed records and updates them:
 
-![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---wjBVo58ArPRQd5iSu3IF6---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
+![Batch job](/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---BuC2pmEdJ61VOhufGmQWA---figure---BCN2n_Ozx69KwSvEnzo8NA.png "Batch job")
 
 
 
@@ -131,9 +131,6 @@ Test
 <a href="/Search Indexing-cloud-architecture-1.eraserdiagram" data-element-id="CM5mBMuwy_d6MWmwQ-gX-"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----e679acbb3c3e9ec4d58753c9fd2f53c1.png" alt="" data-element-id="CM5mBMuwy_d6MWmwQ-gX-" /></a>
 <a href="/Search Indexing-cloud-architecture-2.eraserdiagram" data-element-id="wN4BjVLkZf3ZcxUbqFrnp"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----db20a1bb0469ef09f7bebbe0d5755196.png" alt="" data-element-id="wN4BjVLkZf3ZcxUbqFrnp" /></a>
 <a href="/Search Indexing-cloud-architecture-3.eraserdiagram" data-element-id="LTr9lvaJTQwi4LPWmhqlx"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----a3b62e08847a353f10db19c1b9d79160.png" alt="" data-element-id="LTr9lvaJTQwi4LPWmhqlx" /></a>
-<a href="/Search Indexing-cloud-architecture-4.eraserdiagram" data-element-id="2A-JoOdemLazssQUWYccu"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----8f6822d300a66cd9d2d94772a61009f0.png" alt="" data-element-id="2A-JoOdemLazssQUWYccu" /></a>
-<a href="/Search Indexing-cloud-architecture-5.eraserdiagram" data-element-id="j71SW5eVzOyPgjcjo_iDd"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----41ec3c1f81787a682aed2277c01c9cac.png" alt="" data-element-id="j71SW5eVzOyPgjcjo_iDd" /></a>
-<a href="/Search Indexing-cloud-architecture-6.eraserdiagram" data-element-id="EH0kVLp_Xmnt21fEAAt_z"><img src="/.eraser/pgkd7DLmFDpGJKYB2HSC___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----5f3d3cb8ae9b42eb0d2667391175c0e8.png" alt="" data-element-id="EH0kVLp_Xmnt21fEAAt_z" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/pgkd7DLmFDpGJKYB2HSC --->
