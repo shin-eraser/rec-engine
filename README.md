@@ -1,14 +1,18 @@
-<p><a target="_blank" href="https://app.eraser.io/workspace/iUbgPn0LujLyI8WCthR4" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
-
+[![Edit in Eraser](https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&token=968381c8-a7e7-472a-8ed6-4a6626da5501)](https://app.eraser.io/workspace/ntLpcw9H86PdpNsElkiv)
 # Hacker News Recommendations
 This service generates daily recommendations from the day's trending articles on [﻿Hacker News](https://news.ycombinator.com/) based on preferences specified by a user.
 
-## Data Model
+It uses a ML-based recommendation system to that generates recommendations. It utilizes an online, nearline and offline layer.
+
+## Architecture
+Here is the overview of the recommendation system architecture:
+
+![Architecture](https://eraser.imgix.net/workspaces/ntLpcw9H86PdpNsElkiv/reS6fUv66LcKWYn8yV2OvCPvwSm2/---figure---uv9fbBkHi0gLOg5wIT1C9g.svg?ixlib=js-3.7.0 "Architecture")
+
+### 
 
 
-![Figure 1](/.eraser/iUbgPn0LujLyI8WCthR4___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---KEUTb2WnbuU93I8BO8xWf---figure---qPLfaXu6yd2fW4NzABwYXA.png "Figure 1")
 
 
 
-
-<!--- Eraser file: https://app.eraser.io/workspace/iUbgPn0LujLyI8WCthR4 --->
+<!--- Eraser file: https://app.eraser.io/workspace/ntLpcw9H86PdpNsElkiv --->
