@@ -5,7 +5,7 @@ This service generates daily recommendations from the day's trending articles on
 
 It uses a ML-based recommendation system to that generates recommendations. It utilizes an online, nearline and offline layer. WHAT
 
-![Figure 1](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---1lNZMpYwRX7TOGCFT0ZsQ---figure---un9UUFBt5u1GwMQ2Ch2pVg.png "Figure 1")
+![Figure 1](/.eraser/wH68eC8NIc1O4ueubFSJ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Se3_Nwxgo8G5pUuD45_E1---figure---un9UUFBt5u1GwMQ2Ch2pVg.png "Figure 1")
 
 
 
@@ -17,6 +17,12 @@ Here is an overview of the recommendation system architecture:
 More things!
 
 [﻿assets](https://github.com/Keith3895/car-wash/blob/main/README.md#assets) 
+
+
+
+[﻿Architecture](https://app.eraser.io/workspace/wH68eC8NIc1O4ueubFSJ#vuLyrE8GMs3u5KFQNh_hZ) 
+
+ 
 
 
 <!-- eraser-additional-content -->
