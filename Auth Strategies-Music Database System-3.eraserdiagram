@@ -1,0 +1,85 @@
+entity-relationship-diagram
+
+title Music Database System
+// define tables
+albums [icon: azure-onelake, color: blue]{
+  AlbumId int pk
+  Title string
+  ArtistId int
+}
+
+artists [icon: user, color: green]{
+  ArtistId int pk
+  Name string
+}
+
+genres [icon: tag, color: purple]{
+  GenreId int pk
+  Name string
+}
+
+playlists [icon: list, color: orange]{
+  PlaylistId int pk
+  Name string
+}
+
+playlist_track [icon: link, color: red]{
+  PlaylistId int pk
+  TrackId int pk
+}
+
+tracks [icon: music, color: yellow]{
+  TrackId int pk
+  Name string
+  AlbumId int
+  GenreId int
+  MediaTypeId int
+  Milliseconds int
+  UnitPrice float
+  Composer string
+  Bytes int
+}
+
+invoices [icon: file-text, color: grey]{
+  InvoiceId int pk
+  InvoiceDate datetime
+  Total float
+  CustomerId int
+  BillingAddress string
+  BillingCity string
+  BillingCountry string
+  BillingPostalCode string
+  BillingState string
+}
+
+invoice_items [icon: shopping-cart, color: teal]{
+  InvoiceLineId int pk
+  InvoiceId int
+  TrackId int
+  Quantity int
+  UnitPrice float
+}
+
+media_types [icon: database, color: brown]{
+  MediaTypeId int pk
+  Name string
+}
+
+customers [icon: users, color: pink]{
+  CustomerId int pk
+  Name string
+  Email string
+  Country string
+}
+// End of tables
+
+// Relationships
+albums.ArtistId > artists.ArtistId
+tracks.AlbumId > albums.AlbumId
+tracks.GenreId > genres.GenreId
+playlist_track.PlaylistId > playlists.PlaylistId
+playlist_track.TrackId > tracks.TrackId
+tracks.MediaTypeId > media_types.MediaTypeId
+invoice_items.InvoiceId > invoices.InvoiceId
+invoice_items.TrackId > tracks.TrackId
+invoices.CustomerId > customers.CustomerId
