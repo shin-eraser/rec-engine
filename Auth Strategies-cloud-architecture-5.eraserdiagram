@@ -1,0 +1,30 @@
+cloud-architecture-diagram
+
+// Define groups and nodes
+API gateway [icon: aws-api-gateway]
+Lambda [icon: aws-lambda]
+S3 [icon: aws-simple-storage-service]
+
+VPC Subnet [icon: aws-vpc] {
+  Main Server {
+    Server [icon: aws-ec2]
+    Data [icon: aws-rds]
+  }
+
+  Queue [icon: aws-auto-scaling]
+
+  Compute Nodes [color: red] {
+    Worker1 [icon: aws-ec2]
+    Worker2 [icon: aws-ec2]
+    Worker3 [icon: aws-ec2]
+  }
+}
+
+Analytics [icon: aws-redshift]
+
+// Define connections
+API gateway > Lambda > Server > Data
+Server > Queue
+Queue > Worker1, Worker2, Worker3
+S3 < Data
+Compute Nodes > Analytics

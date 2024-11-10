@@ -1,4 +1,4 @@
-<p><a target="_blank" href="https://app.eraser.io/workspace/KLZue7jaYy17up7ars6z" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+<p><a target="_blank" href="https://app.eraser.io/workspace/UfXJCzi1z8UeFUgIqZGq" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
 The topic of authentication/authorization is one of those things that all engineers come in contact with at some point but quickly forget.
 
@@ -9,7 +9,6 @@ Lucky for us, there are now plenty of offerings that make these flows easier to 
 - Managed auth companies like Auth0 and Clerk
 - Open-source libraries like Lucia, Auth.js, and Passport in JS ecosystem, Devise in Rails, and starter kits like Breeze in Laravel
 But sometimes, it's nice to look under the hood and see what's going on.
-
 So in this post, I'm going to attempt to give us all a refresher on OAuth 2.0, explore some common "flows", and do a deep dive into "client vs server-side auth" in the context of the OAuth 2.0 protocol.
 
 Let's dive in.
@@ -25,10 +24,9 @@ While a simple construct, there are many layers of implementation details.
 OAuth 2.0 is an industry-standard authorization framework [﻿maintained by the IETF](https://datatracker.ietf.org/doc/html/rfc6749) (Internet Engineering Task Force) that defines all the specifications for enabling 3rd party applications to obtain limited access to an HTTP service. This includes, but is not limited to definitions for:
 
 - "Flows" (also called "Grant Types")
-- Required endpoints to be implemented by an auth server (e.g. `/authorize` , `/token` , etc.)
+- Required endpoints to be implemented by an auth server (e.g. `/authorize`  , `/token`  , etc.)
 - Security considerations
 Essentially, it defines how an application should implement a feature like "Login with Google".
-
 ### Authentication vs. Authorization
 First, we need to review the differences between authentication and authorization. To keep this high level, here are some key differences to remember:
 
@@ -38,7 +36,6 @@ First, we need to review the differences between authentication and authorizatio
 - Authorization is about "what"
     - What can the user see or interact within the system?
     - Access token via OAuth 2.0 protocol
-![Authentication vs. Authorization](/.eraser/KLZue7jaYy17up7ars6z___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---2sJAmrsPJ3G_Ai7sh9cVc---figure---OwhBpV6P4s8P6VTewGggjw.png "Authentication vs. Authorization")
 
 You'll notice in the diagram that authentication and authorization is a sequential, not parallel process. We first must authenticate and only _then_ can we know what to authorize.
 
@@ -49,7 +46,7 @@ As a brief refresher, here are some terms to remember:
 - **Resource Owner**: is typically the end user (human) granting "client" access to protected resources (e.g. "Yes, you can access my Google profile info")
 - **Resource Server**: the server who has protected resources (and requires an access token to get those resources)
 - **Authorization Server**: the server who _authenticates_ ("who") and grants an access token ("what") to the "resource owner"
-- **Grant Types ("Flows")**: these are _standardized_ flows that specify how the access token is retrieved. You can read more about all the [﻿different grant types here](https://oauth.net/2/grant-types/) , but below are the most common:
+- **Grant Types ("Flows")**: these are _standardized_ flows that specify how the access token is retrieved. You can read more about all the [﻿different grant types here](https://oauth.net/2/grant-types/)  , but below are the most common:
     - **Authorization Code** - commonly known as "server-side auth"
     - **Authorization Code with PKCE** - commonly known as "client-side auth"
     - Other flows include "Client Credentials" (machine-to-machine apps), "Device Code" (i.e. Apple TV), and several legacy flows like "Implicit Flow" and "Password Grant"
@@ -71,8 +68,9 @@ Authorization code flow is the most common server-side OAuth 2.0 flow you'll see
 4. App reads the query param, sends that auth code back to the auth server along with a client id and secret, and in exchange, receives an ID and access token.
 5. App can now attach the access token to future requests
 You can see the flow in the diagram below:
+![Authorization Code Flow (server-side)](/.eraser/UfXJCzi1z8UeFUgIqZGq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Pn7MzlJScVjaMZtfbbxNG---figure---MWqJc87OeLHEe0BBjMv_yQ.png "Authorization Code Flow (server-side)")
 
-![Authorization Code Flow (server-side)](/.eraser/KLZue7jaYy17up7ars6z___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---Ue0ER8VblQssIi2jCVSjt---figure---MWqJc87OeLHEe0BBjMv_yQ.png "Authorization Code Flow (server-side)")
+
 
 Below, I'll walk through some of the considerations a developer must make when implementing a server-side auth flow like Authorization Code Flow.
 
@@ -108,11 +106,9 @@ That said, regardless of whether you're managing your own auth server or outsour
 - User sessions are managed server-side by the organization, which means they can be invalidated or terminated based on suspicious activity
 - All communication between the web server and the auth server happen server-side, which eliminates client-side vulnerabilities (i.e. XSS attacks)
 That said, it does not come without risks and overhead. When dealing with server-side auth, it is important to consider:
-
 - A centralized server is a single point of attack, so configuring the server properly to encrypt data in-transit, use strong hashing algorithms, use http-only cookies to protect sessions, and regularly audit the server for compliance is important.
 - Server-side auth is still vulnerable to CSRF (cross site request forgery) and DDoS attacks, so proper rate-limiting and anti-CSRF tokens are required.
 In most cases, the centralized control + simplicity is a security benefit and is why server-side auth is often considered more secure than client-side auth.
-
 #### What about serverless?
 Before I go any further, I want to clarify that the "server-side auth" we're talking about here is specifically referring to Authorization Code Flow with "token based authentication" (i.e. JWTs). OAuth 2.0 does not mandate the use of JWTs as a token format, but this format is very common and works well with serverless architectures.
 
@@ -128,7 +124,6 @@ Using Authorization Code Flow server-side is generally NOT suitable for:
 1. SPAs
 2. Native Apps
 "Public Clients" like SPAs and native apps are typically not a great fit for a server-side Authorization Code Flow for one reason—**they cannot store the client secret securely**.
-
 For a server-side OAuth 2.0 flow, both a client ID and client secret are required to identify an app to the auth server (i.e. Auth0 servers). With an SPA, the client-side bundle can be inspected while a Native App can be decompiled. In both cases, the secret would be exposed—a big problem from a security standpoint.
 
 While both of these apps interact with servers in various capacities, their API requests are not tied to page loads like a traditional server-side app, which makes them a bad fit for the server-side auth model. Maintaining a server-side session would require page reloads and defeat the purpose of the SPA model.
@@ -142,7 +137,6 @@ The flow is similar to the server-side flow with two major differences:
 
 1. The client "secret" (code challenge and verifier) is _dynamically generated by the client_ rather than stored on the server
 2. The client interacts directly with the auth server rather than delegating that function to the server-side web app. A "session" is still maintained, but this is handled by the auth server rather than your own server.
-![Authorization Code Flow + PKCE (client-side)](/.eraser/KLZue7jaYy17up7ars6z___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---QqvElzNL900VBZhwNlySd---figure---KKnxszkYdMsKW6PTNDNi-g.png "Authorization Code Flow + PKCE (client-side)")
 
 ### More Complex, Harder to Secure
 Moving from regular Authorization Code Flow to Authorization Code Flow + PKCE requires a significant increase in complexity and code surface area to properly secure.
@@ -151,10 +145,9 @@ Since the client secret isn't stored on the server, the client app must generate
 
 Before hitting the auth server, the client (browser) will generate a "code challenge". This consists of two steps:
 
-1. Generate a cryptographically random string called `code_verifier` 
+1. Generate a cryptographically random string called `code_verifier`  
 2. Pass `code_verifier`  into a hash function, most often `code_challenge = SHA256(code_verifier)` 
-The auth server will later use the specified method (e.g. S256) and the `code_verifier` to recreate and validate the `code_challenge` value.
-
+The auth server will later use the specified method (e.g. S256) and the `code_verifier`  to recreate and validate the `code_challenge`  value.
 This code challenge step is required since the SPA cannot store (and send) a client secret along with the Authorization Code (as we did in the basic Authorization Code Flow).
 
 In addition to the code challenge, the way we _persist_ the "session" has to change too.
@@ -233,8 +226,12 @@ As a quick recap, here's what we learned:
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/Auth Strategies-sequence-diagram-1.eraserdiagram" data-element-id="o3ebSiRPrDWwKBDRgrbv7"><img src="/.eraser/KLZue7jaYy17up7ars6z___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----ff16409353e68cc40f60d714c93322b4.png" alt="" data-element-id="o3ebSiRPrDWwKBDRgrbv7" /></a>
-<a href="/Auth Strategies-sequence-diagram-2.eraserdiagram" data-element-id="7HK7mVjU_PlFL81YOOkry"><img src="/.eraser/KLZue7jaYy17up7ars6z___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----883c3724c3b4c54a65982e102a817082.png" alt="" data-element-id="7HK7mVjU_PlFL81YOOkry" /></a>
+<a href="/Auth Strategies-sequence-diagram-1.eraserdiagram" data-element-id="szwpKHKHxAZok4GJ1y6_F"><img src="/.eraser/UfXJCzi1z8UeFUgIqZGq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----ff16409353e68cc40f60d714c93322b4.png" alt="" data-element-id="szwpKHKHxAZok4GJ1y6_F" /></a>
+<a href="/Auth Strategies-sequence-diagram-2.eraserdiagram" data-element-id="39BRvXhogXJMTeXWSawRh"><img src="/.eraser/UfXJCzi1z8UeFUgIqZGq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----883c3724c3b4c54a65982e102a817082.png" alt="" data-element-id="39BRvXhogXJMTeXWSawRh" /></a>
+<a href="/Auth Strategies-example diagram-3.eraserdiagram" data-element-id="Exu8lFGVxqlqbfyNELrQn"><img src="/.eraser/UfXJCzi1z8UeFUgIqZGq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----76be8e41cf5cd383cbe2507b78c387ae-example-diagram.png" alt="" data-element-id="Exu8lFGVxqlqbfyNELrQn" /></a>
+<a href="/Auth Strategies-sequence-diagram-4.eraserdiagram" data-element-id="a_2jeenDtFRLbaZ3trLLA"><img src="/.eraser/UfXJCzi1z8UeFUgIqZGq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----ff16409353e68cc40f60d714c93322b4.png" alt="" data-element-id="a_2jeenDtFRLbaZ3trLLA" /></a>
+<a href="/Auth Strategies-cloud-architecture-5.eraserdiagram" data-element-id="ntslJPvmvctjCu-LHvXbe"><img src="/.eraser/UfXJCzi1z8UeFUgIqZGq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----b0ef5bbf28af3e66434df3d5a7324563.png" alt="" data-element-id="ntslJPvmvctjCu-LHvXbe" /></a>
+<a href="/Auth Strategies-entity-relationship-6.eraserdiagram" data-element-id="TzYhuCLpwkirZ7mwnKjSF"><img src="/.eraser/UfXJCzi1z8UeFUgIqZGq___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----19ab055a129fc094491a5695c63657a0.png" alt="" data-element-id="TzYhuCLpwkirZ7mwnKjSF" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
-<!--- Eraser file: https://app.eraser.io/workspace/KLZue7jaYy17up7ars6z --->
+<!--- Eraser file: https://app.eraser.io/workspace/UfXJCzi1z8UeFUgIqZGq --->
