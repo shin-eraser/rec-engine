@@ -68,8 +68,6 @@ Authorization code flow is the most common server-side OAuth 2.0 flow you'll see
 4. App reads the query param, sends that auth code back to the auth server along with a client id and secret, and in exchange, receives an ID and access token.
 5. App can now attach the access token to future requests
 You can see the flow in the diagram below:
-![Authorization Code Flow (server-side)](/.eraser/5oY6VUoPPWdRM4y5i4u8___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---h57fZZTosIjgkkd4pNAua---figure---MWqJc87OeLHEe0BBjMv_yQ.png "Authorization Code Flow (server-side)")
-
 
 
 Below, I'll walk through some of the considerations a developer must make when implementing a server-side auth flow like Authorization Code Flow.
@@ -220,7 +218,7 @@ As a quick recap, here's what we learned:
 - **Authorization Code Flow (server-side) vs. Authorization Code Flow with PKCE (client-side):** In general, server-side auth is simpler to implement, more secure, and provides a better developer experience, but can be a slight sacrifice in end-user experience. Client-side auth (in theory) wins from a user experience standpoint, but is more complex and thus, more prone to security issues and bugs.
 - **Use Authorization Code Flow by default, add PKCE for SPAs and Native Apps**
 - **Takeaways:** While "Auth" as a topic may appear to be simple, it is far from it. There are many layers of abstraction required to securely authenticate and authorize a user in a web app and learning what's going on under the surface can be helpful in determining what _type_ of auth to use and how to implement it correctly.
-![Figure 1](/.eraser/5oY6VUoPPWdRM4y5i4u8___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---iQF8edxLDFU02qvrZ1Sp7---figure---yXTm4KneU_lVS9NBP8ltzw.png "Figure 1")
+![Figure 1](/.eraser/5oY6VUoPPWdRM4y5i4u8___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---kdQkS-TWT-MaUSNvQyM1n---figure---yXTm4KneU_lVS9NBP8ltzw.png "Figure 1")
 
 
 
