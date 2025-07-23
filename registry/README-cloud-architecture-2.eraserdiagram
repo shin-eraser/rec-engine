@@ -1,0 +1,6 @@
+cloud-architecture-diagram
+
+API gateway [icon: aws-api-gateway]
+Lambda [icon: aws-lambda]
+S3 [icon: aws-simple-storage-service]
+
