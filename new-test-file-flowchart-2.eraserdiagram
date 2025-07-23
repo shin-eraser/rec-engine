@@ -4,3 +4,29 @@ direction right
 
 Issue type? [shape: oval, icon: file-text]
 
+BugPath [color: red] {
+  Bug [icon: bug, color: red]
+  Duplicate? [shape: diamond, icon: copy]
+  Mark duplicate [shape: oval, icon: copy]
+  Has repro? [shape: diamond, icon: repeat]
+  Ask for repro [shape: oval, icon: repeat]
+}
+
+FeaturePath [color: green] {
+  Feature [icon: zap, color: green]
+  Well specced? [shape: diamond, icon: check-square]
+  Can be package? [shape: diamond, icon: package]
+  Define as package [shape: oval, icon: package]
+}
+
+
+Issue type? > Bug
+Bug > Duplicate?
+Duplicate? > Mark duplicate: Yes
+Duplicate? > Has repro?: No
+Has repro? > Ask for repro: No
+Issue type? > Feature
+Feature > Can be package?
+Can be package? > Well specced?: No
+Can be package? > Define as package: Yes
+
