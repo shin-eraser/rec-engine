@@ -14,7 +14,7 @@ More things!
 
 [﻿Architecture](https://app.eraser.io/workspace/wH68eC8NIc1O4ueubFSJ#vuLyrE8GMs3u5KFQNh_hZ) 
 
-![Figure 1](/.eraser/w8hC8R4QASCfT9SRugho___qrzg8LLUIVdibQIlzhpLeFMBBin2___---figure---kIQQRjmp3CAo7PrA-oVNL---figure---G5rC_-dtj_WGoChct72YSA.png "Figure 1")
+[![Flowchart](https://qa.eraser.io/workspace/w8hC8R4QASCfT9SRugho/preview?elements=KqA-RdZd8g0FUBOeDHXbyA&type=embed)](https://qa.eraser.io/workspace/w8hC8R4QASCfT9SRugho?elements=KqA-RdZd8g0FUBOeDHXbyA)
 
 
 
