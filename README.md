@@ -9,8 +9,6 @@ It uses a ML-based recommendation system to that generates recommendations. It u
 
 loop asdf
 
-![Testing something](/.eraser/zKWIpHpQV2AM8f4Tmyk4___SOIiXh9tGmdtfE1u0fwNIY8EzVm1___---figure---4hhItcHFGve1Pv62G4z3I---figure---H7GieXmXpwTe-n0KI8WRdw.png "Testing something")
-
 
 
 ## Architecture
@@ -26,7 +24,7 @@ More things!
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/README-sequence-diagram-1.eraserdiagram" data-element-id="Y548LCtNDTtCkujK2lb6w"><img src="/.eraser/zKWIpHpQV2AM8f4Tmyk4___SOIiXh9tGmdtfE1u0fwNIY8EzVm1___---diagram----23ac347cdeea54b617e182a1bb4f8838.png" alt="" data-element-id="Y548LCtNDTtCkujK2lb6w" /></a>
+<a href="/README-sequence-diagram-1.eraserdiagram" data-element-id="Y548LCtNDTtCkujK2lb6w"><img src="/.eraser/zKWIpHpQV2AM8f4Tmyk4___SOIiXh9tGmdtfE1u0fwNIY8EzVm1___---diagram----99ca8bdde34edfa926623200688ea537.png" alt="" data-element-id="Y548LCtNDTtCkujK2lb6w" /></a>
 <a href="/README-cloud-architecture-2.eraserdiagram" data-element-id="yIA-I8o-A5xGjqJSy7bza"><img src="/.eraser/zKWIpHpQV2AM8f4Tmyk4___SOIiXh9tGmdtfE1u0fwNIY8EzVm1___---diagram----25b1d12491e1a5c7ca90211f6a9e9ea4.png" alt="" data-element-id="yIA-I8o-A5xGjqJSy7bza" /></a>
 <a href="/README-sequence-diagram-3.eraserdiagram" data-element-id="R8tVm6KsSpHnIhK88IRbW"><img src="/.eraser/zKWIpHpQV2AM8f4Tmyk4___SOIiXh9tGmdtfE1u0fwNIY8EzVm1___---diagram----fa73c792c8239e904eeb67fc4434ca85.png" alt="" data-element-id="R8tVm6KsSpHnIhK88IRbW" /></a>
 <a href="/README-flowchart-4.eraserdiagram" data-element-id="mMqvSQESWaWpZbAFBpA2i"><img src="/.eraser/zKWIpHpQV2AM8f4Tmyk4___SOIiXh9tGmdtfE1u0fwNIY8EzVm1___---diagram----af2d5f91d706ccfc33f2f8688656edad.png" alt="" data-element-id="mMqvSQESWaWpZbAFBpA2i" /></a>
