@@ -3,11 +3,7 @@
 # Hacker News Recommendations
 This service generates daily recommendations from the day's trending articles on [﻿Hacker News](https://news.ycombinator.com/) based on preferences specified by a user.
 
-It uses a ML-based recommendation system to that generates recommendations. It utilizes an online, nearline and offline layer. WHAT
-
-![Figure 1](undefined "Figure 1")
-
-loop asdf
+It uses a ML-based recommendation system to that generates recommendations. It utilizes an
 
 
 
