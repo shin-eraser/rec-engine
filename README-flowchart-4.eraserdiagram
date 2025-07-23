@@ -1,6 +1,5 @@
 flowchart-diagram
 
-
 direction right
 
 Issue type? [shape: oval, icon: file-text]
@@ -12,6 +11,3 @@ BugPath [color: red] {
   Has repro? [shape: diamond, icon: repeat]
   Ask for repro [shape: oval, icon: repeat]
 }
-
-
-
