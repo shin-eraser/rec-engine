@@ -1,7 +1,5 @@
 sequence-diagram
 
-
-
 Client [icon: monitor, color: gray]
 Server [icon: server, color: blue]
 Service [icon: tool, color: green]
@@ -17,4 +15,3 @@ loop [label: until success, color: green] {
 Server - Service: Data processing
 Server --> Client: Data response
 deactivate Server
-
