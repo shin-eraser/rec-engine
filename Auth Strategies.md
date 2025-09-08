@@ -220,7 +220,7 @@ As a quick recap, here's what we learned:
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/Auth Strategies-cloud-architecture-1.eraserdiagram" data-element-id="mxiS4CQTvLwgXt0vPsUrt"><img src="/.eraser/kGkEbI0ZQjoau4D3tZzP___67Ed9tq1O9R1Ue4HoW2lN54ivGo2___---diagram----0e7c51d8e2b41389f87e13ebf8face4b.png" alt="" data-element-id="mxiS4CQTvLwgXt0vPsUrt" /></a>
+<a href="/Auth Strategies-cloud-architecture-1.eraserdiagram" data-element-id="mxiS4CQTvLwgXt0vPsUrt"><img src="/.eraser/kGkEbI0ZQjoau4D3tZzP___67Ed9tq1O9R1Ue4HoW2lN54ivGo2___---diagram----a4f5828b0a669ca81dc7582b750c3794.png" alt="" data-element-id="mxiS4CQTvLwgXt0vPsUrt" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://jmfamily.eraser.io/workspace/kGkEbI0ZQjoau4D3tZzP --->
