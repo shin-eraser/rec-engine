@@ -1,0 +1,42 @@
+flowchart-diagram
+
+title ITSM Chatbot Data Flow
+direction right
+
+// Groups and nodes
+User Interaction [color: blue, icon: user] {
+  User [shape: oval, color: lightblue, icon: user]
+  Web App [color: blue, icon: monitor]
+}
+
+AI Processing [color: purple, icon: gcp-ai-platform] {
+  Azure OpenAI [color: purple, icon: azure-openai]
+  Determine intent [shape: diamond, color: purple, icon: help-circle]
+}
+
+External Integrations [color: teal, icon: layers] {
+  SharePoint [color: teal, icon: azure-sharepoint]
+  ServiceNow [color: teal, icon: ourlogo]
+}
+
+User Response [color: blue, icon: message-square] {
+  Web App Response [color: blue, icon: monitor]
+  User Receives Response [shape: oval, color: lightblue, icon: user]
+}
+
+// Relationships
+User > Web App: Submit query
+Web App > Azure OpenAI: Send user query
+Azure OpenAI > Determine intent
+
+Determine intent > SharePoint: Informational query
+Determine intent > ServiceNow: Service/ticket query
+
+SharePoint > Web App Response: Return knowledge article
+ServiceNow > Web App Response: Return ticket status or confirmation
+
+Web App Response > User Receives Response: Display response
+
+// Loop for further queries
+User < User Receives Response: New query (optional)
+
