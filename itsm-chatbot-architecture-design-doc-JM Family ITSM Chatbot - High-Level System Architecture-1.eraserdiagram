@@ -1,0 +1,36 @@
+cloud-architecture-diagram
+
+title JM Family ITSM Chatbot - High-Level System Architecture
+
+// Top-level network boundary
+Intranet Network [color: blue, icon: shield] {
+  // Frontend group
+  Web App [icon: monitor] {
+    Chat UI [icon: message-circle]
+    Authentication [icon: azure-active-directory, label: "Azure AD SSO"]
+  }
+
+  // AI processing
+  Azure OpenAI [icon: azure-openai]
+
+  // Knowledge base
+  SharePoint [icon: sharepoint]
+
+  // Ticketing system
+  ServiceNow [icon: servicenow]
+}
+
+// External user (not in intranet)
+User [icon: user]
+
+// Connections
+User > Chat UI: chat interaction
+Chat UI > Authentication: SSO login
+Chat UI > Azure OpenAI: send query
+Azure OpenAI > SharePoint: retrieve knowledge
+Azure OpenAI > ServiceNow: manage tickets
+
+// Security notes
+// All connections within Intranet Network are secured via HTTPS and private endpoints
+Chat UI < Azure OpenAI: response
+

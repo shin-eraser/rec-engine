@@ -1,0 +1,42 @@
+bpmn-diagram
+
+// BPMN for Feedback & Improvement Strategy Flowchart
+
+title ITSM Chatbot Feedback & Improvement Cycle
+
+// Pools and Lanes
+User [color: green] {
+  Use Chatbot [type: activity, icon: message-circle]
+  Provide Feedback [type: event, icon: thumbs-up]
+}
+
+IT Team [color: blue] {
+  Logging & Collection [type: activity, icon: file-text]
+  Review Feedback [type: activity, icon: search]
+  Plan Improvements [type: activity, icon: edit-3]
+  Implement Improvements [type: activity, icon: check-circle]
+}
+
+Knowledge Base Team [color: orange] {
+  Update Knowledge Base [type: activity, icon: book-open]
+}
+
+Chatbot System [color: purple] {
+  Update Chatbot Model [type: activity, icon: cpu]
+  Deploy Updates [type: activity, icon: upload]
+  Updated Chatbot Available [type: event, icon: refresh-cw]
+}
+
+// Connections
+Use Chatbot > Provide Feedback
+Provide Feedback --> Logging & Collection : Feedback (dashed)
+Logging & Collection > Review Feedback
+Review Feedback > Plan Improvements
+Plan Improvements > Implement Improvements
+Implement Improvements --> Update Knowledge Base : Content update needed? (dashed)
+Implement Improvements --> Update Chatbot Model : Model/prompt update? (dashed)
+Update Knowledge Base > Deploy Updates
+Update Chatbot Model > Deploy Updates
+Deploy Updates > Updated Chatbot Available
+Updated Chatbot Available --> Use Chatbot : New version live (dashed)
+
