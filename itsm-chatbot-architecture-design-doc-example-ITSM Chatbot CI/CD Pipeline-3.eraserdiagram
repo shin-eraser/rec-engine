@@ -1,0 +1,63 @@
+cloud-architecture-diagram
+
+title ITSM Chatbot CI/CD Pipeline
+
+// Standalone nodes
+GitHub Repo [icon: github, label: "GitHub Repo"]
+
+// CI/CD Orchestrator group with alternatives
+CI_CD Orchestrator [icon: workflow, label: "CI/CD Orchestrator"] {
+  GitHub Actions [icon: githubactions]
+  Azure DevOps [icon: azure-devops]
+  
+  // Pipeline stages
+  Build Stage [icon: wrench, label: "Build"]
+  Test Stage [icon: check-circle, label: "Test"]
+  Deploy Stage [icon: upload, label: "Deploy"]
+}
+
+// Approval & Rollback group
+Approval_Rollback [icon: shield-check, label: "Approval & Rollback"] {
+  Manual Approval [icon: thumbs-up, label: "Manual Approval"]
+  Automated Rollback [icon: rotate-ccw, label: "Automated Rollback"]
+}
+
+// Environments group
+Environments [icon: layers] {
+  Dev Environment [icon: azure-app-service, label: "Dev"]
+  Test Environment [icon: azure-app-service, label: "Test"]
+  Prod Environment [icon: azure-app-service, label: "Prod"]
+  BlueGreen Canary [icon: git-branch, label: "Blue-Green/Canary", color: green]
+}
+
+// Connections
+GitHub Repo > CI_CD Orchestrator: trigger pipeline
+
+// Orchestrator alternatives (either/or)
+
+// Pipeline flow
+GitHub Actions > Build Stage
+Azure DevOps > Build Stage
+
+Build Stage > Test Stage
+Test Stage > Deploy Stage
+
+// Deploy to environments sequentially
+Deploy Stage > Dev Environment
+Dev Environment > Test Environment
+
+// Approval before Prod
+Test Environment > Manual Approval
+
+// Optional deployment strategy for Prod
+Prod Environment > BlueGreen Canary: canary/blue-green deployment
+
+// Rollback can be triggered from any environment
+Dev Environment > Automated Rollback: on failure
+Test Environment > Automated Rollback: on failure
+Prod Environment > Automated Rollback: on failure
+
+// Rollback returns to previous Deploy Stage
+Prod Environment < Manual Approval
+Deploy Stage < Automated Rollback: revert to previous version
+
