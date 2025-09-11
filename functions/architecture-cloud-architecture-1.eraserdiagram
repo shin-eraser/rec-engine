@@ -1,0 +1,6 @@
+cloud-architecture-diagram
+
+Azure function [icon: azure-function-apps]
+Azure SQL [icon: azure-sql]
+
+Azure function > Azure SQL: Connection
