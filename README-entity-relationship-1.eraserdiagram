@@ -1,10 +1,12 @@
 entity-relationship-diagram
 
 
+
 users [icon: user, color: blue] {
   id string pk
   displayName string
   team_role string
   teams string
 }
+
 
