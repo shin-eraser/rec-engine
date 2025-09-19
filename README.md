@@ -16,7 +16,7 @@ More things!
 
 
 
-[![Sequence Diagram](https://app.eraser.io/workspace/gB8raD6bt0dwTan87Bjz/preview?elements=bODFw1XnP8FFxeT0ycYEKA&type=embed)](https://app.eraser.io/workspace/gB8raD6bt0dwTan87Bjz?elements=bODFw1XnP8FFxeT0ycYEKA)
+![Figure 1](/.eraser/gB8raD6bt0dwTan87Bjz___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---_Qh22y7rTfn8GAfkfAyTp---figure---oBb5Dof5hiRJoAulEPd_mQ.png "Figure 1")
 
 
 
