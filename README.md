@@ -14,9 +14,9 @@ More things!
 
 [﻿Architecture](https://app.eraser.io/workspace/wH68eC8NIc1O4ueubFSJ#vuLyrE8GMs3u5KFQNh_hZ) 
 
+![Figure 1](undefined "Figure 1")
 
 
-![Figure 1](/.eraser/gB8raD6bt0dwTan87Bjz___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---_Qh22y7rTfn8GAfkfAyTp---figure---oBb5Dof5hiRJoAulEPd_mQ.png "Figure 1")
 
 
 
