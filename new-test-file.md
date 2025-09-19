@@ -2,9 +2,13 @@
 
 awefaewfw
 
-![Example](/.eraser/RfPVnTSpI9vgq963EyMo___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---RoDPVCCUWwB5d7il7YZMn---figure---dzrohIQ-niny7nqRxqDnBg.png "Example")
+![Example](/.eraser/RfPVnTSpI9vgq963EyMo___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---JLN5o29Ll7_NLF1EJuFUK---figure---dzrohIQ-niny7nqRxqDnBg.png "Example")
 
 aefeaw
+
+![Figure 1](/.eraser/RfPVnTSpI9vgq963EyMo___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---FFJ1h8ijTDYMcVY1JN7V----figure---sTmFlJgZ71XWQl5dNBVAxQ.png "Figure 1")
+
+awefeawfeaw
 
 
 <!-- eraser-additional-content -->
