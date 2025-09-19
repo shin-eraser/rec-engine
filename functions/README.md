@@ -3,6 +3,12 @@
 Test!
 
 
+
+![Architecture](/.eraser/R4lCwc3J6McGd4EDLCvZ___reS6fUv66LcKWYn8yV2OvCPvwSm2___---figure---NaLzZnmDyBeyfdU2odgxj---figure---hKjyP3fPE_vEc6gsT--7lA.png "Architecture")
+
+
+
+
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
