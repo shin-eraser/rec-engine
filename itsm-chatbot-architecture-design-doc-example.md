@@ -1,4 +1,4 @@
-<p><a target="_blank" href="https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+<p><a target="_blank" href="https://app.eraser.io/workspace/5SoB3Rq1j0nEQpDjvv2n" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
 ## Project Overview
 The ITSM chatbot is an internal web application designed for JM Family employees to easily interact with IT services. Employees will use the chatbot to:
@@ -7,7 +7,6 @@ The ITSM chatbot is an internal web application designed for JM Family employees
 - Retrieve knowledge base articles from SharePoint.
 - Open and manage IT support tickets through ServiceNow.
 **Target users:** All JM Family employees across business units.
-
 **Business objectives:**
 
 - Improve self-service IT support.
@@ -18,8 +17,6 @@ The ITSM chatbot is an internal web application designed for JM Family employees
 
 ## System Architecture
 ### High-Level Overview
-[![JM Family ITSM Chatbot - High-Level System Architecture](https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN/preview?elements=nc8Ha4dxLb_bBsVtf_ZE4Q&type=embed)](https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN?elements=nc8Ha4dxLb_bBsVtf_ZE4Q)
-
 ### Major Components
 - **Web Application**
  Intranet-only, browser-based interface for employees. Provides chat interface, authentication integration, and secure communication with backend services.
@@ -32,15 +29,15 @@ The ITSM chatbot is an internal web application designed for JM Family employees
 - **Authentication & Access Control**
     - Integrated with Azure AD (SSO).
     - Role-based access to limit ticket management features to employees vs. IT staff.
+
 - **Network & Hosting**
     - Hosted in JM Family’s intranet network (private endpoints, no public exposure).
     - Web App + APIs hosted in Azure App Service or Azure Kubernetes Service (AKS).
     - All connections secured via HTTPS and Azure Private Link.
+
 ---
 
 ## Data Flow
-[![ITSM Chatbot Data Flow](https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN/preview?elements=tWFSKLsRZdc93HMUgnBFzA&type=embed)](https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN?elements=tWFSKLsRZdc93HMUgnBFzA)
-
 1. User submits a query in the chatbot UI.
 2. Web App sends query to Azure OpenAI for intent recognition.
 3. If query is informational: OpenAI retrieves relevant documents from SharePoint.
@@ -56,34 +53,40 @@ The ITSM chatbot is an internal web application designed for JM Family employees
 - **Azure OpenAI**
     - GPT-based models for intent classification and response generation.
     - Prompt engineering with contextual grounding from SharePoint content.
+
 ---
 
 ## CI/CD Pipeline
-[![ITSM Chatbot CI/CD Pipeline](https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN/preview?elements=zhTrWQ_NIQ9WHG-F_Rt80Q&type=embed)](https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN?elements=zhTrWQ_NIQ9WHG-F_Rt80Q)
-
 - **Source Control:** GitHub repositories for code, prompts, and deployment configurations.
 - **Build & Test:**
     - Automated builds triggered on pull requests.
     - Unit, integration, and security testing in pipeline.
+
 - **Deployment:**
     - CI/CD pipelines using GitHub Actions or Azure DevOps.
     - Automated deployment to Azure environments.
+
 - **Environment Promotion:**
     - Dev → Test → Prod with approvals at each stage.
     - Canary/blue-green deployment options for production.
+
 - **Rollback:**
     - Automated rollback to previous version if deployment fails or health checks fail.
+
 ---
 
 ## Security and Compliance
 - **Data Privacy & Access Control**
     - Queries anonymized and logged without PII where possible.
     - Azure AD SSO enforces user identity verification.
+
 - **Sensitive Information Handling**
     - ServiceNow tickets may include confidential IT details → secured with TLS and role-based access.
+
 - **Compliance**
     - Adheres to JM Family IT security policies.
     - Aligns with SOC 2 and ISO 27001 security principles.
+
 ---
 
 ## Monitoring and Logging
@@ -94,30 +97,33 @@ The ITSM chatbot is an internal web application designed for JM Family employees
 ---
 
 ## Feedback and Improvement Strategy
-[![ITSM Chatbot Feedback & Improvement Cycle](https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN/preview?elements=5nqmkTvKqk61ibtgQ8IAyA&type=embed)](https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN?elements=5nqmkTvKqk61ibtgQ8IAyA)
-
 - **Feedback Collection:**
     - Inline thumbs-up/down in chatbot responses.
     - Survey links in ServiceNow tickets.
+
 - **Review & Implementation:**
     - IT team reviews logs and feedback weekly.
     - Continuous improvement cycle for prompts and integrations.
+
 - **Knowledge Base Updates:**
     - Automatic flagging of “no answer” queries for SharePoint content team.
     - Quarterly content review with IT stakeholders.
+
 - **Model Tuning:**
     - Continuous prompt optimization.
     - Evaluation of Azure OpenAI model updates for performance improvements.
 
 
 
+
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/itsm-chatbot-architecture-design-doc-example-JM Family ITSM Chatbot - High-Level System Architecture-1.eraserdiagram" data-element-id="FGwbgQekWVwsirTuNNgaB"><img src="/.eraser/NLRsjxQZVNJMtkARzBFN___67Ed9tq1O9R1Ue4HoW2lN54ivGo2___---diagram----36a2d5caaea5114ae6424a60a65a4be2-JM-Family-ITSM-Chatbot---High-Level-System-Architecture.png" alt="" data-element-id="FGwbgQekWVwsirTuNNgaB" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot Data Flow-2.eraserdiagram" data-element-id="BsgFzLXbbJ45iQojofgkb"><img src="/.eraser/NLRsjxQZVNJMtkARzBFN___67Ed9tq1O9R1Ue4HoW2lN54ivGo2___---diagram----09cc5d324c46ede62ea9bb1fe189e926-ITSM-Chatbot-Data-Flow.png" alt="" data-element-id="BsgFzLXbbJ45iQojofgkb" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot CI/CD Pipeline-3.eraserdiagram" data-element-id="zzzexrtS1QVjn2YD2iybu"><img src="/.eraser/NLRsjxQZVNJMtkARzBFN___67Ed9tq1O9R1Ue4HoW2lN54ivGo2___---diagram----ea39aa62791d6f6c3a74f50dd1296021-ITSM-Chatbot-CI-CD-Pipeline.png" alt="" data-element-id="zzzexrtS1QVjn2YD2iybu" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot Feedback & Improvement Cycle-4.eraserdiagram" data-element-id="VhW6MshKqHK0MTqvotgQP"><img src="/.eraser/NLRsjxQZVNJMtkARzBFN___67Ed9tq1O9R1Ue4HoW2lN54ivGo2___---diagram----793804e315e921d27726f53db5fbbf67-ITSM-Chatbot-Feedback---Improvement-Cycle.png" alt="" data-element-id="VhW6MshKqHK0MTqvotgQP" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot Data Flow-1.eraserdiagram" data-element-id="BsgFzLXbbJ45iQojofgkb"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----8bab04dffaa6b3e8be9388ea43609ce5-ITSM-Chatbot-Data-Flow.png" alt="" data-element-id="BsgFzLXbbJ45iQojofgkb" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-JM Family ITSM Chatbot - High-Level System Architecture-2.eraserdiagram" data-element-id="FGwbgQekWVwsirTuNNgaB"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----075714e5a77a1cbf1fac5e531bc2437d-JM-Family-ITSM-Chatbot---High-Level-System-Architecture.png" alt="" data-element-id="FGwbgQekWVwsirTuNNgaB" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot Feedback & Improvement Cycle-3.eraserdiagram" data-element-id="VhW6MshKqHK0MTqvotgQP"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----e484bc682ab7527f8a587be1a28f47ed-ITSM-Chatbot-Feedback---Improvement-Cycle.png" alt="" data-element-id="VhW6MshKqHK0MTqvotgQP" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot CI/CD Pipeline-4.eraserdiagram" data-element-id="zzzexrtS1QVjn2YD2iybu"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----e75eb751426bedb55f9a63aa28b8f55b-ITSM-Chatbot-CI-CD-Pipeline.png" alt="" data-element-id="zzzexrtS1QVjn2YD2iybu" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-sequence-diagram-5.eraserdiagram" data-element-id="Y9fydr3swzLUr73Syp1IS"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----b9ff8ff96807345e69b6d13413d95ec6.png" alt="" data-element-id="Y9fydr3swzLUr73Syp1IS" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
-<!--- Eraser file: https://jmfamily.eraser.io/workspace/NLRsjxQZVNJMtkARzBFN --->
+<!--- Eraser file: https://app.eraser.io/workspace/5SoB3Rq1j0nEQpDjvv2n --->
