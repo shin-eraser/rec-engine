@@ -2,6 +2,7 @@ cloud-architecture-diagram
 
 
 
+
 title JM Family ITSM Chatbot - High-Level System Architecture
 
 // Top-level network boundary
@@ -35,6 +36,7 @@ Azure OpenAI > ServiceNow: manage tickets
 // Security notes
 // All connections within Intranet Network are secured via HTTPS and private endpoints
 Chat UI < Azure OpenAI: response
+
 
 
 
