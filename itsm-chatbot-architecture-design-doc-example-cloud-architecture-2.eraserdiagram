@@ -1,6 +1,7 @@
 cloud-architecture-diagram
 
 
+
 API gateway [icon: aws-api-gateway]
 Lambda [icon: aws-lambda]
 S3 [icon: aws-simple-storage-service]
@@ -19,4 +20,5 @@ VPC Subnet [icon: aws-vpc] {
 API gateway > Lambda > Server > Data
 Server > Queue
 S3 < Data
+
 
