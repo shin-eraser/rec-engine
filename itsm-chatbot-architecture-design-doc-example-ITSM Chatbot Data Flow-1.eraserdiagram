@@ -3,6 +3,7 @@ flowchart-diagram
 
 
 
+
 title ITSM Chatbot Data Flow
 direction right
 
@@ -42,6 +43,7 @@ Web App Response > User Receives Response: Display response
 
 // Loop for further queries
 User < User Receives Response: New query (optional)
+
 
 
 
