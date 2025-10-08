@@ -3,6 +3,7 @@ cloud-architecture-diagram
 
 
 
+
 title ITSM Chatbot CI/CD Pipeline
 
 // Standalone nodes
@@ -63,6 +64,7 @@ Prod Environment > Automated Rollback: on failure
 // Rollback returns to previous Deploy Stage
 Prod Environment < Manual Approval
 Deploy Stage < Automated Rollback: revert to previous version
+
 
 
 
