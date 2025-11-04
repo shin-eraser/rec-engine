@@ -1,6 +1,7 @@
 entity-relationship-diagram
 
 
+
 users [icon: user, color: blue] {
   id string pk
   displayName string
@@ -45,4 +46,5 @@ workspaces.teamId > teams.id
 chat.workspaceId > workspaces.id
 invite.workspaceId > workspaces.id
 invite.inviterId > users.id
+
 

@@ -5,6 +5,7 @@ cloud-architecture-diagram
 
 
 
+
 title ITSM Chatbot CI/CD Pipeline
 
 // Standalone nodes
@@ -34,6 +35,10 @@ Environments [icon: layers] {
   Prod Environment [icon: azure-app-service, label: "Prod"]
   BlueGreen Canary [icon: git-branch, label: "Blue-Green/Canary", color: green]
 }
+GitHub Repo_1 [label: GitHub Repo, icon: github]
+GitHub Repo_2 [label: GitHub Repo, icon: github]
+GitHub Repo_3 [label: GitHub Repo, icon: github]
+GitHub Repo_4 [label: GitHub Repo, icon: github]
 
 // Connections
 GitHub Repo > CI_CD Orchestrator: trigger pipeline
@@ -65,6 +70,7 @@ Prod Environment > Automated Rollback: on failure
 // Rollback returns to previous Deploy Stage
 Prod Environment < Manual Approval
 Deploy Stage < Automated Rollback: revert to previous version
+
 
 
 
