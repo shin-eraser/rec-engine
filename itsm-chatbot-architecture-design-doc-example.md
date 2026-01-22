@@ -1,4 +1,4 @@
-<p><a target="_blank" href="https://mlb.eraser.io/workspace/3T6gSUKZjwPVzQasjyYV" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+<p><a target="_blank" href="https://app.eraser.io/workspace/5SoB3Rq1j0nEQpDjvv2n" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
 ## Project Overview
 The ITSM chatbot is an internal web application designed for JM Family employees to easily interact with IT services. Employees will use the chatbot to:
@@ -8,6 +8,7 @@ The ITSM chatbot is an internal web application designed for JM Family employees
 - Open and manage IT support tickets through ServiceNow.
 **Target users:** All JM Family employees across business units.
 **Business objectives:**
+
 - Improve self-service IT support.
 - Reduce IT helpdesk workload.
 - Provide quick, AI-powered responses.
@@ -118,13 +119,12 @@ The ITSM chatbot is an internal web application designed for JM Family employees
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot Data Flow-1.eraserdiagram" data-element-id="BsgFzLXbbJ45iQojofgkb"><img src="/.eraser/3T6gSUKZjwPVzQasjyYV___Cbc8lytAEfVixzwCarGP8wOVSOn1___---diagram----c6fd592dbdd2f7d773a636e42d989d34-ITSM-Chatbot-Data-Flow.png" alt="" data-element-id="BsgFzLXbbJ45iQojofgkb" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-cloud-architecture-2.eraserdiagram" data-element-id="3kHWdUU3tGPwRv7zOyilk"><img src="/.eraser/3T6gSUKZjwPVzQasjyYV___Cbc8lytAEfVixzwCarGP8wOVSOn1___---diagram----7e3a03972bd58709551ebd186abcfe19.png" alt="" data-element-id="3kHWdUU3tGPwRv7zOyilk" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-entity-relationship-3.eraserdiagram" data-element-id="_Twqv1o-2EeQdqDbuqD6c"><img src="/.eraser/3T6gSUKZjwPVzQasjyYV___Cbc8lytAEfVixzwCarGP8wOVSOn1___---diagram----898ebe165cd8b48a45f7b966665d6149.png" alt="" data-element-id="_Twqv1o-2EeQdqDbuqD6c" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-JM Family ITSM Chatbot - High-Level System Architecture-4.eraserdiagram" data-element-id="FGwbgQekWVwsirTuNNgaB"><img src="/.eraser/3T6gSUKZjwPVzQasjyYV___Cbc8lytAEfVixzwCarGP8wOVSOn1___---diagram----4772bb5c91324be7046cd483084a1553-JM-Family-ITSM-Chatbot---High-Level-System-Architecture.png" alt="" data-element-id="FGwbgQekWVwsirTuNNgaB" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot Feedback & Improvement Cycle-5.eraserdiagram" data-element-id="VhW6MshKqHK0MTqvotgQP"><img src="/.eraser/3T6gSUKZjwPVzQasjyYV___Cbc8lytAEfVixzwCarGP8wOVSOn1___---diagram----24e67abbf04930b4efaa3dede708b649-ITSM-Chatbot-Feedback---Improvement-Cycle.png" alt="" data-element-id="VhW6MshKqHK0MTqvotgQP" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot CI/CD Pipeline-6.eraserdiagram" data-element-id="zzzexrtS1QVjn2YD2iybu"><img src="/.eraser/3T6gSUKZjwPVzQasjyYV___Cbc8lytAEfVixzwCarGP8wOVSOn1___---diagram----4091d6155945c1828e0ea0f299d344f0-ITSM-Chatbot-CI-CD-Pipeline.png" alt="" data-element-id="zzzexrtS1QVjn2YD2iybu" /></a>
-<a href="/itsm-chatbot-architecture-design-doc-example-sequence-diagram-7.eraserdiagram" data-element-id="o0PTJfdREI6rUrbiNksiw"><img src="/.eraser/3T6gSUKZjwPVzQasjyYV___Cbc8lytAEfVixzwCarGP8wOVSOn1___---diagram----b9ff8ff96807345e69b6d13413d95ec6.png" alt="" data-element-id="o0PTJfdREI6rUrbiNksiw" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot Data Flow-1.eraserdiagram" data-element-id="BsgFzLXbbJ45iQojofgkb"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----8bab04dffaa6b3e8be9388ea43609ce5-ITSM-Chatbot-Data-Flow.png" alt="" data-element-id="BsgFzLXbbJ45iQojofgkb" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-JM Family ITSM Chatbot - High-Level System Architecture-2.eraserdiagram" data-element-id="FGwbgQekWVwsirTuNNgaB"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----075714e5a77a1cbf1fac5e531bc2437d-JM-Family-ITSM-Chatbot---High-Level-System-Architecture.png" alt="" data-element-id="FGwbgQekWVwsirTuNNgaB" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot Feedback & Improvement Cycle-3.eraserdiagram" data-element-id="VhW6MshKqHK0MTqvotgQP"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----e484bc682ab7527f8a587be1a28f47ed-ITSM-Chatbot-Feedback---Improvement-Cycle.png" alt="" data-element-id="VhW6MshKqHK0MTqvotgQP" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-ITSM Chatbot CI/CD Pipeline-4.eraserdiagram" data-element-id="zzzexrtS1QVjn2YD2iybu"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----e75eb751426bedb55f9a63aa28b8f55b-ITSM-Chatbot-CI-CD-Pipeline.png" alt="" data-element-id="zzzexrtS1QVjn2YD2iybu" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-sequence-diagram-5.eraserdiagram" data-element-id="Y9fydr3swzLUr73Syp1IS"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----b9ff8ff96807345e69b6d13413d95ec6.png" alt="" data-element-id="Y9fydr3swzLUr73Syp1IS" /></a>
+<a href="/itsm-chatbot-architecture-design-doc-example-JM Family ITSM Chatbot - High-Level System Architecture-6.eraserdiagram" data-element-id="C92vtQU00YghOZC_wSumB"><img src="/.eraser/5SoB3Rq1j0nEQpDjvv2n___reS6fUv66LcKWYn8yV2OvCPvwSm2___---diagram----4535f93530e4b7e52329f2711cda092a-JM-Family-ITSM-Chatbot---High-Level-System-Architecture.png" alt="" data-element-id="C92vtQU00YghOZC_wSumB" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
-<!--- Eraser file: https://mlb.eraser.io/workspace/3T6gSUKZjwPVzQasjyYV --->
+<!--- Eraser file: https://app.eraser.io/workspace/5SoB3Rq1j0nEQpDjvv2n --->
