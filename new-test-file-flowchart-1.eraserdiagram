@@ -1,6 +1,7 @@
 flowchart-diagram
 
 
+
 direction right
 
 Issue type? [shape: oval, icon: file-text]
@@ -20,5 +21,6 @@ Bug > Duplicate?
 Duplicate? > Mark duplicate: Yes
 Duplicate? > Has repro?: No
 Has repro? > Ask for repro: No
+
 
 

@@ -1,5 +1,6 @@
 cloud-architecture-diagram
 
+
 API gateway [icon: aws-api-gateway]
 Lambda [icon: aws-lambda]
 S3 [icon: aws-simple-storage-service]
@@ -26,3 +27,4 @@ Server > Queue
 Queue > Worker1, Worker2, Worker3
 S3 < Data
 Compute Nodes > Analytics
+
