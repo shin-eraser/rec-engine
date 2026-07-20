@@ -223,6 +223,8 @@ As a quick recap, here's what we learned:
 <!-- eraser-additional-files -->
 <a href="/Auth Strategies-cloud-architecture-1.eraserdiagram" data-element-id="mxiS4CQTvLwgXt0vPsUrt"><img src="/.eraser/FRRH7sPoISldYT3lkViA___tVzAris5asZlMxpiloAxAsQOcri2___---diagram----52039d4518c1d5bfac2a72ef7f5e11f9.png" alt="" data-element-id="mxiS4CQTvLwgXt0vPsUrt" /></a>
 <a href="/Auth Strategies-cloud-architecture-2.eraserdiagram" data-element-id="62EGf1OOzeI0-1Gly_IXg"><img src="/.eraser/FRRH7sPoISldYT3lkViA___tVzAris5asZlMxpiloAxAsQOcri2___---diagram----b71496a6c07d7f5de8bc54b17af2e2b8.png" alt="" data-element-id="62EGf1OOzeI0-1Gly_IXg" /></a>
+<a href="/Auth Strategies-cloud-architecture-3.eraserdiagram" data-element-id="Fcs2zuA_DfQ6lIblpdQdY"><img src="/.eraser/FRRH7sPoISldYT3lkViA___tVzAris5asZlMxpiloAxAsQOcri2___---diagram----4f379bb1c1ff19253f2fca45bf875216.png" alt="" data-element-id="Fcs2zuA_DfQ6lIblpdQdY" /></a>
+<a href="/Auth Strategies-sequence-diagram-4.eraserdiagram" data-element-id="N_PIF1Km6oMBkjtg43K6K"><img src="/.eraser/FRRH7sPoISldYT3lkViA___tVzAris5asZlMxpiloAxAsQOcri2___---diagram----1ecf5a773dfa105227bd0da18acecd5c.png" alt="" data-element-id="N_PIF1Km6oMBkjtg43K6K" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://farmersinsurance.eraser.io/workspace/FRRH7sPoISldYT3lkViA --->
