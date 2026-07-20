@@ -1,0 +1,17 @@
+cloud-architecture-diagram
+
+
+
+VPC Subnet [icon: aws-vpc] {
+  Main Server {
+    Server [icon: aws-ec2]
+    Data [icon: aws-rds]
+  }
+
+  Queue [icon: aws-auto-scaling]
+
+  }
+
+
+Server > Queue
+

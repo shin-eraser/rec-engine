@@ -222,6 +222,7 @@ As a quick recap, here's what we learned:
 ## Diagrams
 <!-- eraser-additional-files -->
 <a href="/Auth Strategies-cloud-architecture-1.eraserdiagram" data-element-id="mxiS4CQTvLwgXt0vPsUrt"><img src="/.eraser/FRRH7sPoISldYT3lkViA___tVzAris5asZlMxpiloAxAsQOcri2___---diagram----52039d4518c1d5bfac2a72ef7f5e11f9.png" alt="" data-element-id="mxiS4CQTvLwgXt0vPsUrt" /></a>
+<a href="/Auth Strategies-cloud-architecture-2.eraserdiagram" data-element-id="62EGf1OOzeI0-1Gly_IXg"><img src="/.eraser/FRRH7sPoISldYT3lkViA___tVzAris5asZlMxpiloAxAsQOcri2___---diagram----b71496a6c07d7f5de8bc54b17af2e2b8.png" alt="" data-element-id="62EGf1OOzeI0-1Gly_IXg" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://farmersinsurance.eraser.io/workspace/FRRH7sPoISldYT3lkViA --->
